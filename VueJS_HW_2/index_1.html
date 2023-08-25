@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS_HW_2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <!-- Вы разрабатываете приложение для отображения и сортировки списка товаров. У вас есть массив объектов products, где каждый объект представляет товар с его названием и ценой. Вам необходимо отобразить список товаров и предоставить пользователю возможность сортировать товары по цене (по возрастанию и по убыванию). -->
+    <div id="task1">
+        <h2>Список товаров</h2>
+        <ul>
+            <li v-for="(item, index) in products" :key="index">
+                <span>{{ item.name }}, цена: {{ item.price }}</span>
+            </li>
+        </ul>
+        <button @click="ascendingSort">По возрастанию</button>
+        <button @click="descendingSort">По убыванию</button>
+    </div>
+    
+    <script>
+        new Vue({
+            el: "#task1",
+            data: {
+                products: [
+                    {name: 'name1', price: 100},
+                    {name: 'name2', price: 35},
+                    {name: 'name3', price: 250},
+                    {name: 'name4', price: 75},
+                    {name: 'name5', price: 15},
+                ],
+                newProducts:[],
+                },
+            methods: {
+                ascendingSort() {
+                    newProducts = this.products.sort((a, b) => a.price-b.price);
+                    return newProducts;
+                },
+                descendingSort() {
+                    newProducts = this.products.sort((a, b) => b.price-a.price);
+                    return newProducts;
+                },
+            }
+        });
+        </script>
+</body>
+</html>
