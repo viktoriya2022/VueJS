@@ -261,11 +261,23 @@ border-radius: 70px;
 .blog {
     margin-bottom: 96px;
 }
+ 
+.article-heading {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 62.5px */
+    letter-spacing: 1px;  
+    margin-bottom: 30px;  
+}
 
 .blog-items {
     display: flex;
     justify-content: center;
     gap: 27px;
+    flex-wrap: wrap;
 }
 
 .blog-item {
@@ -277,7 +289,17 @@ border-radius: 70px;
     border: 1px solid #E7E7E7;
     box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
     position: relative;
+    width: 337px;
 }
+
+.blog-item:hover {
+    background-color: #F4F0EC;
+}
+
+.blog-item:hover circle {
+    fill: white;
+}
+
 .blog-img {
     border-radius: 43px 43px 0 0;
 }
