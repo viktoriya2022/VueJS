@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div id="blog">
+    <div >
         <header class="header center">
             <div class="logo">
                 <img class="logo-img" src="img/Logo.png" alt="logo">
@@ -24,10 +24,17 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main >
+            <div class="blog-title ">
+                <img class="title-img" src="img/Photo_11.png" alt="picture">
+                <div class="blog-subtitle blog-img">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <section class="blog center">
                 <div class="article-heading">Articles & News</div>
-                <div class="blog-items center">
+                <div id="blog" class="blog-items center">
                     <div v-for="item in items" :key="item.id" class="blog-item">
                         <div class="blog-content">
                             <div class="tag">
@@ -46,6 +53,16 @@
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pages" class="pagination" >
+                    <div v-for="item in items" :key="item.id">
+                        <div class="container">
+                            <svg class="pages" width="53" height="52" viewBox="0 0 53 52" :fill=" item.color" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="26.5" cy="26" r="25.5" :stroke="item.stroke"/>
+                            </svg>
+                            <h2 class="pagination-number">{{item.number}}</h2>
                         </div>
                     </div>
                 </div>
@@ -126,6 +143,18 @@
                 text: 'Best For Any Office & Business Interior Solution',
                 date: '25 December, 2022'
              }
+            ]
+          }
+        });
+
+        new Vue({
+          el: '#pages',
+          data: {
+            items: [
+                {id:1, number:'01', color: '#F4F0EC', stroke: 'none'}, 
+                {id:2, number:'02', color: 'white', stroke:'#CDA274'}, 
+                {id:3, number:'03', color: 'white',stroke:'#CDA274'}, 
+                {id:4, number:'>', color: 'white',stroke:'#CDA274'}, 
             ]
           }
         });
