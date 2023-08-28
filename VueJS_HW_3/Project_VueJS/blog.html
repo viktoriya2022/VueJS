@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <div >
+        <header class="header center">
+            <div class="logo">
+                <img class="logo-img" src="img/Logo.png" alt="logo">
+                <h2 class="logo-text">Interno</h2>
+            </div>
+            <div class="menubar">
+                <div class="menu">
+                    <h3 class="menu">Home</h3>
+                    <h3 class="menu">Project</h3>
+                    <h3 class="menu">Blog</h3>
+                </div>
+            </div>
+        </header>
+        <main >
+            <div class="blog-title">
+                <img class="title-img" src="img/Photo_11.png" alt="picture">
+                <div class="blog-subtitle blog-img">
+                    <span class="article-heading">Articles & News</span>
+                    <span class="project-subtitle">Home / Blog</span>
+                </div>
+            </div>
+            <section class="latest_post center">
+                <div class="article-heading">Latest Post</div>
+                <div class="latest_post-content">
+                    <img class="latest_post-img" src= "img/Photo_12.png" alt="picture">
+                    <div class="blog-subcontent">
+                        <p class="blog-text">Low Cost Latest Invented Interior Designing Ideas</p>
+                        <div class="latest_post-info">
+                            <p class="project-subtitle latest_post-par">
+                                Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.
+                            </p>
+                            <p class="project-subtitle latest_post-par">
+                                Lorem Ipsum is not simply random text. It has roots in a piece of classica.
+                            </p>
+                            <div class="blog-date">
+                                    <h3 class="date-title">26 December, 2022  </h3>
+                                <a href="#">
+                                    <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
+                                        <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog center">
+                <div class="article-heading">Articles & News</div>
+                <div id="blog" class="blog-items center">
+                    <div v-for="item in items" :key="item.id" class="blog-item">
+                        <div class="blog-content">
+                            <div class="tag">
+                                <h3 class="tag-text">{{ item.tag }}</h3>
+                            </div>
+                            <img class="blog-img" :src= "item.img" alt="picture">
+                            <div class="blog-subcontent">
+                                <div class="blog-text">{{ item.text }}</div>
+                                <div class="blog-date">
+                                        <h3 class="date-title">{{ item.date }} </h3>
+                                    <a href="#">
+                                        <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
+                                            <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pages" class="pagination" >
+                    <div v-for="item in items" :key="item.id">
+                        <div class="container">
+                            <svg class="pages" width="53" height="52" viewBox="0 0 53 52" :fill=" item.color" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="26.5" cy="26" r="25.5" :stroke="item.stroke"/>
+                            </svg>
+                            <h2 class="pagination-number">{{item.number}}</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer center">
+            <div class="footer-logo">
+                <div class="logo">
+                    <img class="logo-img" src="img/Logo.png" alt="logo">
+                    <h2 class="logo-text">Interno</h2>
+                </div>
+                <h2 class="footer-text">It is a long established fact that a reader will be distracted lookings.</h2>
+                <div class="icons">
+                    <a href="#">
+                        <img class="icon" src="img/tw.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="icon" src="img/in.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-pages">
+                <h2 class="footer-title">Pages</h2>
+                <a class="footer-text" href="#">Home</a>
+                <a class="footer-text" href="#">Project</a>
+                <a class="footer-text" href="#">Blog</a>
+            </div>
+            <div class="footer-none"></div>
+            <div class="footer-contacts">
+                <h2 class="footer-title">Contacts</h2>
+                <h2 class="footer-text">55 East Birchwood Ave. Brooklyn, New York 11201 
+                    </h2>
+                <h2 class="footer-text">contact@interno.com</h2>
+                <h2 class="footer-text">(123) 456 - 7890</h2>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+        new Vue({
+          el: '#blog',
+          data: {
+            items: [
+              { id: 1, 
+                tag: 'Kitchen Design', 
+                img: 'img/Photo_5.png', 
+                text: 'Let’s Get Solution For Building Construction Work',
+                date: '26 December, 2022',
+             },
+              { id: 2, 
+                tag: 'Living Design', 
+                img: 'img/Photo_6.png', 
+                text: 'Low Cost Latest Invented Interior Designing Ideas.',
+                date: '22 December, 2022'
+             },
+              { id: 3, 
+                tag: 'Interior Design', 
+                img: 'img/Photo_7.png', 
+                text: 'Best For Any Office & Business Interior Solution',
+                date: '25 December, 2022'
+             },
+              { id: 4, 
+                tag: 'Kitchen Design', 
+                img: 'img/Photo_8.png', 
+                text: 'Let’s Get Solution For Building Construction Work',
+                date: '26 December, 2022',
+             },
+              { id: 5, 
+                tag: 'Interior Design', 
+                img: 'img/Photo_9.png', 
+                text: 'Low Cost Latest Invented Interior Designing Ideas.',
+                date: '22 December, 2022'
+             },
+              { id: 6, 
+                tag: 'Interior Design', 
+                img: 'img/Photo_10.png', 
+                text: 'Best For Any Office & Business Interior Solution',
+                date: '25 December, 2022'
+             }
+            ]
+          }
+        });
+
+        new Vue({
+          el: '#pages',
+          data: {
+            items: [
+                {id:1, number:'01', color: '#F4F0EC', stroke: 'none'}, 
+                {id:2, number:'02', color: 'white', stroke:'#CDA274'}, 
+                {id:3, number:'03', color: 'white',stroke:'#CDA274'}, 
+                {id:4, number:'>', color: 'white',stroke:'#CDA274'}, 
+            ]
+          }
+        });
+      </script>
+
+
+</body>
+</html>

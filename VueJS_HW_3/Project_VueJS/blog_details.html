@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog_Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+</head>
+<body>
+    <div >
+        <header class="header center">
+            <div class="logo">
+                <img class="logo-img" src="img/Logo.png" alt="logo">
+                <h2 class="logo-text">Interno</h2>
+            </div>
+            <div class="menubar">
+                <div class="menu">
+                    <h3 class="menu">Home</h3>
+                    <h3 class="menu">Project</h3>
+                    <h3 class="menu">Blog</h3>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="blog-title">
+                <img class="title-img" src="img/Photo_13.png" alt="picture">
+            </div>
+            <div id="app" class="main_container center">
+                <article_block></article_block>
+            </div>
+        </main>
+        <footer class="footer center">
+            <div class="footer-logo">
+                <div class="logo">
+                    <img class="logo-img" src="img/Logo.png" alt="logo">
+                    <h2 class="logo-text">Interno</h2>
+                </div>
+                <h2 class="footer-text">It is a long established fact that a reader will be distracted lookings.</h2>
+                <div class="icons">
+                    <a href="#">
+                        <img class="icon" src="img/tw.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="icon" src="img/in.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-pages">
+                <h2 class="footer-title">Pages</h2>
+                <a class="footer-text" href="#">Home</a>
+                <a class="footer-text" href="#">Project</a>
+                <a class="footer-text" href="#">Blog</a>
+            </div>
+            <div class="footer-none"></div>
+            <div class="footer-contacts">
+                <h2 class="footer-title">Contacts</h2>
+                <h2 class="footer-text">55 East Birchwood Ave. Brooklyn, New York 11201 
+                    </h2>
+                <h2 class="footer-text">contact@interno.com</h2>
+                <h2 class="footer-text">(123) 456 - 7890</h2>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+        Vue.component('article_block', {
+            data() {
+                return {
+                    articles: [
+                        { id: 0, 
+                        tag: 'kitchen', 
+                        title: 'Lets Get Solution for Building Construction Work', 
+                        img: 'img/Photo_14.png',
+                        text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don t look even slightly believable.Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.'},
+                        { id: 1, 
+                        tag: 'bedroom', 
+                        title: 'Design sprints are great',
+                        img: 'img/Photo_15.png',
+                        text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+                        { id: 2, 
+                        tag: 'bedroom', 
+                        title: 'Design sprints are great',
+                        img: 'img/Photo_15.png',
+                        text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+                        { id: 3, 
+                        tag: 'kitchen', 
+                        title: 'Design sprints are great',
+                        img: 'img/Photo_14.png',
+                        text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+                        { id: 4, 
+                        tag: 'kitchen_planning', 
+                        title: 'Design sprints are great',
+                        img: 'img/Photo_15.png',
+                        text: 'KITCHEN PLANNING Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+                        { id: 5, 
+                        tag: 'kitchen_planning', 
+                        title: 'Design sprints are great',
+                        img: 'img/Photo_14.png',
+                        text: 'OTHER KITCHEN PLANNINGLorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+                    ],
+                    tags: [
+                        {id: 0, tag: 'kitchen', title:'Kitchen'},
+                        {id: 1, tag: 'bedroom', title:'Bedroom'},
+                        {id: 2, tag: 'building', title:'Building'},
+                        {id: 3, tag: 'architecture', title:'Architecture'},
+                        {id: 4, tag: 'kitchen_planning', title:'Kitchen Planning'}
+                    ]
+                }
+            },
+            methods: {
+                getArticle(button) {
+                    this.articles = this.articles.filter(elem => elem.tag === button.tag);
+                }
+            },
+
+            
+            template: `
+            <div class="details-block">
+                <section class="article_block">
+                    <div v-for="(item, index) in articles" :key="item.id" 
+                    class="">
+                        <span class="article-heading">{{ item.title }}</span>
+                        <img class="latest_post-img" :src="item.img" alt="picture">
+                        <p class="project-subtitle">{{ item.text }}</p>
+                    </div>
+                </section>
+                <div>
+                    <h2>Tags</h2>
+                    <div class="tags-block">
+                        <button v-for="(button, index) in tags" @click="getArticle(button)" class="tag-button"> {{ button.title }}</button>   
+                    </div> 
+                </div>
+            </div>
+
+            `,
+        });
+        new Vue({
+            el: "#app",
+        })
+    </script>
+
+
+</body>
+</html>
