@@ -1,0 +1,36 @@
+<template>
+  <div id="app">
+    <!-- <IndexPage/> -->
+    <!-- <BlogPage/> -->
+    <BlogDetails/>
+  </div>
+</template>
+
+<script>
+
+// import IndexPage from './assets/pages/IndexPage.vue';
+// import BlogPage from './assets/pages/BlogPage.vue'
+import BlogDetails from './assets/pages/BlogDetails.vue';
+
+export default {
+  name: 'App',
+  components: {
+    BlogDetails
+}
+}
+</script>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+</style>
