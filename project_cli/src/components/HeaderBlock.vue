@@ -1,14 +1,16 @@
 <template>
   <header class="header center">
-        <div class="logo">
+        <a href="#">
+            <div class="logo">
             <img class="logo-img" src="../assets/images/Logo.png" alt="logo">
             <h2 class="logo-text">Interno</h2>
         </div>
+        </a>
         <div class="menubar">
             <div class="menu">
-                <h3 class="menu">Home</h3>
-                <h3 class="menu">Project</h3>
-                <h3 class="menu">Blog</h3>
+                <a class="menu-text">Home</a>
+                <a class="menu">Project</a>
+                <a class="menu">Blog</a>
             </div>
         </div>
     </header>
@@ -23,17 +25,7 @@ export default {
 </script>
 
 <style scoped>
-/* * {
-    margin: 0;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-}
-.center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-} */
+
 .header {
     min-height: 50px;
     /* background: #222222; */
@@ -76,5 +68,21 @@ a {
     align-items: center;
     flex-wrap: nowrap;
     gap: 20px;
+    color: #292F36;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 25px */
+    }
+
+.menu-text {
+    color: #292F36;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 25px */
 }
+
 </style>

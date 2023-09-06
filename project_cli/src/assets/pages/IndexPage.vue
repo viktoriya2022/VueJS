@@ -2,7 +2,7 @@
     <div>
         <HeaderBlock/>
         <section class="banner center">
-        <img class="banner-img" src="../Banner.png" alt="banner">
+        <img class="banner-img" src="../images/Banner.png" alt="banner">
         <div class="intro">
             <h2 class="intro-title">Let Your Home 
                 Be Unique</h2>
@@ -10,7 +10,7 @@
                 lorem Ipsum fromavailable, majority.</h2>
             <div class="intro-buttom">
                 <a class="intro-buttom-text" href="#">Get Started</a>
-                <img src="../Vector.png" alt="">
+                <img src="../images/Vector.png" alt="">
             </div>
         </div>
         </section>
@@ -21,27 +21,27 @@
             </div>
             <div class="project-block">
                 <div class="kitchen">
-                    <img class="top-left" src="../Photo_1.png" alt="">
+                    <img class="top-left" src="../images/Photo_1.png" alt="">
                     <div class="project-block_text">
                         <div class="project-subcontent">
                             <h3 class="project-title">Modern Kitchen</h3>
                             <h3 class="project-subtitle">Decor / Artchitecture</h3>
                         </div>
                         <a href="#">
-                            <img src="../project-button.svg" alt="">
+                            <img src="../images/project-button.svg" alt="">
                         </a>
 
                     </div>
                 </div>
                 <div class="kitchen">
-                    <img class="top-right" src="../Photo_2.png" alt="">
+                    <img class="top-right" src="../images/Photo_2.png" alt="">
                     <div class="project-block_text">
                         <div class="project-subcontent">
                             <h3 class="project-title">Modern Kitchen</h3>
                             <h3 class="project-subtitle">Decor / Artchitecture</h3>
                         </div>
                         <a href="#">
-                            <img src="../project-button.svg" alt="">
+                            <img src="../images/project-button.svg" alt="">
                         </a>
 
                     </div>
@@ -49,27 +49,27 @@
             </div>
             <div class="project-block">
                 <div class="kitchen">
-                    <img class="bottom-left" src="../Photo_3.png" alt="">
+                    <img class="bottom-left" src="../images/Photo_3.png" alt="">
                     <div class="project-block_text">
                         <div class="project-subcontent">
                             <h3 class="project-title">Modern Kitchen</h3>
                             <h3 class="project-subtitle">Decor / Artchitecture</h3>
                         </div>
                         <a href="#">
-                            <img src="../project-button.svg" alt="">
+                            <img src="../images/project-button.svg" alt="">
                         </a>
 
                     </div>
                 </div>
                 <div class="kitchen">
-                    <img class="bottom-right" src="../Photo_4.png" alt="">
+                    <img class="bottom-right" src="../images/Photo_4.png" alt="">
                     <div class="project-block_text">
                         <div class="project-subcontent">
                             <h3 class="project-title">Modern Kitchen</h3>
                             <h3 class="project-subtitle">Decor / Artchitecture</h3>
                         </div>
                         <a href="#">
-                            <img src="../project-button.svg" alt="">
+                            <img src="../images/project-button.svg" alt="">
                         </a>
 
                     </div>
@@ -110,7 +110,7 @@
                         <div class="tag">
                             <h3 class="tag-text">Kitchan Design</h3>
                         </div>
-                        <img class="blog-img" src="../Photo_5.png" alt="">
+                        <img class="blog-img" src="../images/Photo_5.png" alt="">
                         <div class="blog-subcontent">
                             <div class="blog-text">Let’s Get Solution For Building Construction Work</div>
                             <div class="blog-date">
@@ -130,7 +130,7 @@
                         <div class="tag">
                             <h3 class="tag-text">Living Design</h3>
                         </div>
-                        <img class="blog-img" src="../Photo_6.png" alt="">
+                        <img class="blog-img" src="../images/Photo_6.png" alt="">
                         <div class="blog-subcontent">
                             <div class="blog-text">Low Cost Latest Invented Interior Designing
                                 Ideas.</div>
@@ -151,7 +151,7 @@
                         <div class="tag">
                             <h3 class="tag-text">Interior Design</h3>
                         </div>
-                        <img class="blog-img" src="../Photo_7.png" alt="">
+                        <img class="blog-img" src="../images/Photo_7.png" alt="">
                         <div class="blog-subcontent">
                             <div class="blog-text">Best For Any Office & Business Interior 
                                 Solution</div>

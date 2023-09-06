@@ -2,11 +2,11 @@
     <div>
         <HeaderBlock/>
         <div class="blog-title">
-                <img class="title-img" src="../images/Photo_11.png" alt="picture">
-                <div class="blog-subtitle blog-img">
-                    <span class="article-heading">Articles & News</span>
-                    <span class="project-subtitle">Home / Blog</span>
-                </div>
+            <img class="title-img" src="../images/Photo_11.png" alt="picture">
+            <div class="blog-subtitle blog-img">
+                <span class="article-heading">{{ title }}</span>
+                <span class="project-subtitle">{{ subtitle }}</span>
+            </div>
         </div>
         <section class="latest_post center">
             <div class="article-heading">Latest Post</div>
@@ -36,7 +36,7 @@
         </section>
         <section class="blog center">
             <div class="article-heading">Articles & News</div>
-            <div id="blog" class="blog-items center">
+            <!-- <div id="blog" class="blog-items center">
                 <div class="blog-item">
                     <div class="blog-content">
                         <div class="tag">
@@ -157,7 +157,29 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <div id="blog" class="blog-items center">
+                    <div v-for="card in cards" :key="card.id" class="blog-item">
+                        <div class="blog-content">
+                            <div class="tag">
+                                <h3 class="tag-text">{{ card.tag }}</h3>
+                            </div>
+                            <img class="blog-img" :src= "card.img" alt="picture">
+                            <div class="blog-subcontent">
+                                <div class="blog-text">{{ card.text }}</div>
+                                <div class="blog-date">
+                                        <h3 class="date-title">{{ card.date }} </h3>
+                                    <a href="#">
+                                        <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
+                                            <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div id="pages" class="pagination" >
                 <div v-for="item in items" :key="item.id">
                     <div class="container">
@@ -181,6 +203,46 @@ export default {
     name: 'BlogPage',
     data: function() {
         return {
+            title: 'Articles & News',
+            subtitle: 'Home / Blog',
+            cards: [
+              { id: 1, 
+                tag: 'Kitchen Design', 
+                img: '../images/Photo_5.png', 
+                text: 'Let’s Get Solution For Building Construction Work',
+                date: '26 December, 2022',
+             },
+              { id: 2, 
+                tag: 'Living Design', 
+                img: '../images/Photo_6.png', 
+                text: 'Low Cost Latest Invented Interior Designing Ideas.',
+                date: '22 December, 2022'
+             },
+              { id: 3, 
+                tag: 'Interior Design', 
+                img: '../images/Photo_7.png', 
+                text: 'Best For Any Office & Business Interior Solution',
+                date: '25 December, 2022'
+             },
+              { id: 4, 
+                tag: 'Kitchen Design', 
+                img: '../images/Photo_8.png', 
+                text: 'Let’s Get Solution For Building Construction Work',
+                date: '26 December, 2022',
+             },
+              { id: 5, 
+                tag: 'Interior Design', 
+                img: '../images/Photo_9.png', 
+                text: 'Low Cost Latest Invented Interior Designing Ideas.',
+                date: '22 December, 2022'
+             },
+              { id: 6, 
+                tag: 'Interior Design', 
+                img: '../images/Photo_10.png', 
+                text: 'Best For Any Office & Business Interior Solution',
+                date: '25 December, 2022'
+             }
+            ],
             items: [
                 {id:1, number:'01', color: '#F4F0EC', stroke: 'none'}, 
                 {id:2, number:'02', color: 'white', stroke:'#CDA274'}, 

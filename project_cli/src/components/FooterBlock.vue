@@ -2,10 +2,12 @@
     <div>
         <footer class="footer center">
         <div class="footer-logo">
-            <div class="logo">
+            <a href="#">
+                <div class="logo">
                 <img class="logo-img" src="../assets/images/Logo.png" alt="logo">
                 <h2 class="logo-text">Interno</h2>
             </div>
+            </a>
             <h2 class="footer-text">It is a long established fact that a reader will be distracted lookings.</h2>
             <div class="icons">
                 <a href="#">
@@ -61,11 +63,15 @@ export default {
     margin-top: 250px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .logo-img {
     width: 34px;
     height: 34px;
 }
-
 .logo-text {
     color: #292F36;
     /* font-family: DM Serif Display; */
@@ -74,39 +80,27 @@ export default {
     font-weight: 400;
     line-height: 125%;   
 }
-.footer-title {
-    color: #292F36;
-    font-family: DM Serif Display;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 31.25px */
-}
-
 .footer-text {
     color: #4D5053;
     font-family: Jost;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 300%; /* 66px */
+    line-height: 300%; 
     letter-spacing: 0.22px;
 }
-
 .footer-pages, .footer-contacts, .footer-logo {
     display: flex;
     justify-content: start;
     gap: 10px;
     flex-direction: column;
 }
-
 .icons {
     display: flex;
     justify-content: start;
     gap: 54px;
     margin-top: 30px;
 }
-
 .icon {
     width: 30px;
 }
