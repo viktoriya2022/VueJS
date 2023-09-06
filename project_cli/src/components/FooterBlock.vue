@@ -32,7 +32,7 @@
             <h2 class="footer-text">contact@interno.com</h2>
             <h2 class="footer-text">(123) 456 - 7890</h2>
         </div>
-    </footer>
+        </footer>
     </div>
 </template>
 

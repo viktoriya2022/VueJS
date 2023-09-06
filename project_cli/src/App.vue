@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <ProjectPage/> -->
     <!-- <IndexPage/> -->
     <BlogPage/>
     <!-- <BlogDetails/> -->
@@ -7,7 +8,7 @@
 </template>
 
 <script>
-
+// import ProjectPage from './assets/pages/ProjectPage.vue';
 // import IndexPage from './assets/pages/IndexPage.vue';
 import BlogPage from './assets/pages/BlogPage.vue'
 // import BlogDetails from './assets/pages/BlogDetails.vue';

@@ -1,13 +1,10 @@
 <template>
     <div>
         <HeaderBlock/>
-        <div class="blog-title">
-            <img class="title-img" src="../images/Photo_11.png" alt="picture">
-            <div class="blog-subtitle blog-img">
-                <span class="article-heading">{{ title }}</span>
-                <span class="project-subtitle">{{ subtitle }}</span>
-            </div>
-        </div>
+        <TitleBlock
+        :title="title"
+        :subtitle="subtitle"
+        :img="img"/>
         <section class="latest_post center">
             <div class="article-heading">Latest Post</div>
             <div class="latest_post-content">
@@ -36,128 +33,7 @@
         </section>
         <section class="blog center">
             <div class="article-heading">Articles & News</div>
-            <!-- <div id="blog" class="blog-items center">
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <div class="tag">
-                            <h3 class="tag-text">Kitchen Design</h3>
-                        </div>
-                        <img class="blog-img" src="../images/Photo_5.png" alt="picture">
-                        <div class="blog-subcontent">
-                            <div class="blog-text">Let’s Get Solution For Building Construction Work</div>
-                            <div class="blog-date">
-                                    <h3 class="date-title">26 December, 2022</h3>
-                                <a href="#">
-                                    <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
-                                        <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <div class="tag">
-                            <h3 class="tag-text">Living Design</h3>
-                        </div>
-                        <img class="blog-img" src="../images/Photo_6.png" alt="picture">
-                        <div class="blog-subcontent">
-                            <div class="blog-text">Low Cost Latest Invented Interior Designing Ideas.</div>
-                            <div class="blog-date">
-                                    <h3 class="date-title">22 December, 2022</h3>
-                                <a href="#">
-                                    <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
-                                        <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <div class="tag">
-                            <h3 class="tag-text">Interior Design</h3>
-                        </div>
-                        <img class="blog-img" src="../images/Photo_7.png" alt="picture">
-                        <div class="blog-subcontent">
-                            <div class="blog-text">Best For Any Office & Business Interior Solution</div>
-                            <div class="blog-date">
-                                    <h3 class="date-title">25 December, 2022</h3>
-                                <a href="#">
-                                    <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
-                                        <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <div class="tag">
-                            <h3 class="tag-text">Kitchen Design</h3>
-                        </div>
-                        <img class="blog-img" src="../images/Photo_8.png" alt="picture">
-                        <div class="blog-subcontent">
-                            <div class="blog-text">Let’s Get Solution For Building Construction Work</div>
-                            <div class="blog-date">
-                                    <h3 class="date-title">26 December, 2022</h3>
-                                <a href="#">
-                                    <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
-                                        <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <div class="tag">
-                            <h3 class="tag-text">Interior Design</h3>
-                        </div>
-                        <img class="blog-img" src="../images/Photo_9.png" alt="picture">
-                        <div class="blog-subcontent">
-                            <div class="blog-text">Low Cost Latest Invented Interior Designing Ideas.</div>
-                            <div class="blog-date">
-                                    <h3 class="date-title">25 December, 2022</h3>
-                                <a href="#">
-                                    <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
-                                        <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <div class="tag">
-                            <h3 class="tag-text">Interior Design</h3>
-                        </div>
-                        <img class="blog-img" src="../images/Photo_10.png" alt="picture">
-                        <div class="blog-subcontent">
-                            <div class="blog-text">Best For Any Office & Business Interior Solution</div>
-                            <div class="blog-date">
-                                    <h3 class="date-title">25 December, 2022</h3>
-                                <a href="#">
-                                    <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
-                                        <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+ 
             <div id="blog" class="blog-items center">
                     <div v-for="card in cards" :key="card.id" class="blog-item">
                         <div class="blog-content">
@@ -198,6 +74,7 @@
 <script>
 import FooterBlock from '@/components/FooterBlock.vue';
 import HeaderBlock from '@/components/HeaderBlock.vue';
+import TitleBlock from '@/components/TitleBlock.vue';
 
 export default {
     name: 'BlogPage',
@@ -205,6 +82,7 @@ export default {
         return {
             title: 'Articles & News',
             subtitle: 'Home / Blog',
+            img: "../images/Photo_11.png",
             cards: [
               { id: 1, 
                 tag: 'Kitchen Design', 
@@ -249,13 +127,12 @@ export default {
                 {id:3, number:'03', color: 'white',stroke:'#CDA274'}, 
                 {id:4, number:'>', color: 'white',stroke:'#CDA274'}, 
             ]
-
         };
     },
     mounted() {
     },
     methods: {},
-    components: { HeaderBlock, FooterBlock }
+    components: { HeaderBlock, FooterBlock, TitleBlock }
 };
 </script>
 
