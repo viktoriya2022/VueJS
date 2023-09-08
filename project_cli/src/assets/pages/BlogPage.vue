@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+            </div>
             <div id="pages" class="pagination" >
                 <div v-for="item in items" :key="item.id">
                     <div class="container">
