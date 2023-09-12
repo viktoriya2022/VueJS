@@ -2,8 +2,9 @@
     <div>
         <HeaderBlock/>
         <main>
-            <div class="blog-title">
-                <img class="title-img" src="../images/Photo_13.png" alt="picture">
+            <div class="title">
+                <div class="img">
+                </div>
             </div>
             <div id="app" class="main_container center">
                 <article_block>
@@ -97,23 +98,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.blog-title {
+.title {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
     margin-bottom: 200px;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
 }
+.img{
+    background-image: url("../../../public/images/Photo_13.png");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    max-width: 100vw;
+    height: 30vh;
+}
+
 .article-heading {
     color: #292F36;
     font-family: DM Serif Display;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
-    line-height: 125%; /* 62.5px */
+    line-height: 125%; 
     letter-spacing: 1px;  
 }
 
@@ -130,6 +136,15 @@ export default {
     margin-bottom: 96px;
 }
 
+.project-subtitle {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    letter-spacing: 0.22px;
+}
 .tags-block {
     display: flex;
     flex-wrap: wrap;

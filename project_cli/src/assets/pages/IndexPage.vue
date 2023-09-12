@@ -1,8 +1,9 @@
 <template>
     <div>
         <HeaderBlock/>
-        <section class="banner center">
-        <img class="banner-img" src="../images/Banner.png" alt="banner">
+        <main>
+            <section class="banner center">
+        <img class="banner-img" src="../../../public/images/Banner.png" alt="banner">
         <div class="intro">
             <h2 class="intro-title">Let Your Home 
                 Be Unique</h2>
@@ -10,7 +11,7 @@
                 lorem Ipsum fromavailable, majority.</h2>
             <div class="intro-buttom">
                 <a class="intro-buttom-text" href="#">Get Started</a>
-                <img src="../images/Vector.png" alt="">
+                <img src="../../../public/images/Vector.png" alt="">
             </div>
         </div>
         </section>
@@ -21,27 +22,27 @@
             </div>
             <div class="project-block">
                 <div class="kitchen">
-                    <img class="top-left" src="../images/Photo_1.png" alt="">
+                    <img class="top-left" src="../../../public/images/Photo_1.png" alt="">
                     <div class="project-block_text">
                         <div class="project-subcontent">
                             <h3 class="project-title">Modern Kitchen</h3>
                             <h3 class="project-subtitle">Decor / Artchitecture</h3>
                         </div>
                         <a href="#">
-                            <img src="../images/project-button.svg" alt="">
+                            <img src="../../../public/images/project-button.svg" alt="">
                         </a>
 
                     </div>
                 </div>
                 <div class="kitchen">
-                    <img class="top-right" src="../images/Photo_2.png" alt="">
+                    <img class="top-right" src="../../../public/images/Photo_2.png" alt="">
                     <div class="project-block_text">
                         <div class="project-subcontent">
                             <h3 class="project-title">Modern Kitchen</h3>
                             <h3 class="project-subtitle">Decor / Artchitecture</h3>
                         </div>
                         <a href="#">
-                            <img src="../images/project-button.svg" alt="">
+                            <img src="../../../public/images/project-button.svg" alt="">
                         </a>
 
                     </div>
@@ -49,27 +50,27 @@
             </div>
             <div class="project-block">
                 <div class="kitchen">
-                    <img class="bottom-left" src="../images/Photo_3.png" alt="">
+                    <img class="bottom-left" src="../../../public/images/Photo_3.png" alt="">
                     <div class="project-block_text">
                         <div class="project-subcontent">
                             <h3 class="project-title">Modern Kitchen</h3>
                             <h3 class="project-subtitle">Decor / Artchitecture</h3>
                         </div>
                         <a href="#">
-                            <img src="../images/project-button.svg" alt="">
+                            <img src="../../../public/images/project-button.svg" alt="">
                         </a>
 
                     </div>
                 </div>
                 <div class="kitchen">
-                    <img class="bottom-right" src="../images/Photo_4.png" alt="">
+                    <img class="bottom-right" src="../../../public/images/Photo_4.png" alt="">
                     <div class="project-block_text">
                         <div class="project-subcontent">
                             <h3 class="project-title">Modern Kitchen</h3>
                             <h3 class="project-subtitle">Decor / Artchitecture</h3>
                         </div>
                         <a href="#">
-                            <img src="../images/project-button.svg" alt="">
+                            <img src="../../../public/images/project-button.svg" alt="">
                         </a>
 
                     </div>
@@ -110,7 +111,7 @@
                         <div class="tag">
                             <h3 class="tag-text">Kitchan Design</h3>
                         </div>
-                        <img class="blog-img" src="../images/Photo_5.png" alt="">
+                        <img class="blog-img" src="../../../public/images/Photo_5.png" alt="">
                         <div class="blog-subcontent">
                             <div class="blog-text">Let’s Get Solution For Building Construction Work</div>
                             <div class="blog-date">
@@ -130,7 +131,7 @@
                         <div class="tag">
                             <h3 class="tag-text">Living Design</h3>
                         </div>
-                        <img class="blog-img" src="../images/Photo_6.png" alt="">
+                        <img class="blog-img" src="../../../public/images/Photo_6.png" alt="">
                         <div class="blog-subcontent">
                             <div class="blog-text">Low Cost Latest Invented Interior Designing
                                 Ideas.</div>
@@ -151,7 +152,7 @@
                         <div class="tag">
                             <h3 class="tag-text">Interior Design</h3>
                         </div>
-                        <img class="blog-img" src="../images/Photo_7.png" alt="">
+                        <img class="blog-img" src="../../../public/images/Photo_7.png" alt="">
                         <div class="blog-subcontent">
                             <div class="blog-text">Best For Any Office & Business Interior 
                                 Solution</div>
@@ -169,6 +170,7 @@
                 </div>
             </div>
         </section>
+        </main>
         <FooterBlock/>
     </div>
 </template>
@@ -199,7 +201,6 @@ export default {
 }
 
 .banner-img {
-// margin-top: 70px;
 border-radius: 70px;
 }
 
@@ -215,7 +216,7 @@ border-radius: 70px;
 }
 .intro-title {
     color: #292F36;
-    /* font-family: DM Serif Display; */
+    font-family: DM Serif Display; 
     font-size: 65px;
     font-style: normal;
     font-weight: 400;
@@ -228,7 +229,7 @@ border-radius: 70px;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 33px */
+    line-height: 150%; 
     letter-spacing: 0.22px;
 }
 
@@ -236,7 +237,6 @@ border-radius: 70px;
     width: 220px;
     height: 75px;
     display: flex;
-    /* padding: 26px 49px 26px 48px; */
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -252,7 +252,7 @@ border-radius: 70px;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 125%; /* 22.5px */
+    line-height: 125%; 
     letter-spacing: 0.36px;
 }
 .project {
@@ -377,7 +377,6 @@ border-radius: 70px;
     font-weight: 400;
     line-height: 125%; /* 106.25px */
     letter-spacing: 1.7px;
-    
 }
 
 .counter-text {
@@ -389,68 +388,63 @@ border-radius: 70px;
     line-height: 150%; /* 33px */
     letter-spacing: 0.22px;
 }
-
-// .blog {
-//     margin-bottom: 252px;
+// .blog-title {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 40px;
+//     margin-bottom: 200px;
+//     flex-direction: column;
+//     align-items: center;
+//     position: relative;
 // }
 
-.blog-title {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 200px;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
+// .blog-subtitle {
+//     width: 500px;
+//     height: 180px;
+//     background-color: white;
+//     position: absolute;
+//     bottom: 0;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+// }
 
-.blog-subtitle {
-    width: 500px;
-    height: 180px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+// .title-img {
+//     width: 100%;
+//     max-width: 1900px;    
+// }
+//  .latest_post-par {
+//     margin-bottom: 25px;
+//  }
 
-.title-img {
-    width: 100%;
-    max-width: 1900px;    
-}
- .latest_post-par {
-    margin-bottom: 25px;
- }
+// .latest_post-img {
+//     border-radius: 50px;
+// }
+// .latest_post-info {
+//     display: contents;
+// }
 
-.latest_post-img {
-    border-radius: 50px;
-}
-.latest_post-info {
-    display: contents;
-}
+// .latest_post-content {
+//     margin-bottom: 156px;
+// }
 
-.latest_post-content {
-    margin-bottom: 156px;
-}
+// .latest_post-content {
+//     display: flex;
+//     gap: 65px;
+//     padding: 22px;
+//     margin-top: 33px;
+// }
 
-.latest_post-content {
-    display: flex;
-    gap: 65px;
-    padding: 22px;
-    margin-top: 33px;
-}
-
-.article-heading {
-    color: #292F36;
-    font-family: DM Serif Display;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 62.5px */
-    letter-spacing: 1px;  
-}
+// .article-heading {
+//     color: #292F36;
+//     font-family: DM Serif Display;
+//     font-size: 50px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 125%; /* 62.5px */
+//     letter-spacing: 1px;  
+// }
 
 .blog-items {
     display: flex;
@@ -512,17 +506,17 @@ border-radius: 70px;
     align-items: center;
 }
 
-.blog-button {
-    height: 50px;
-}
+// .blog-button {
+//     height: 50px;
+// }
 
-.item-colour {
-    background-color: #F4F0EC;
-}
+// .item-colour {
+//     background-color: #F4F0EC;
+// }
 
-.button-white {
-    color: #FFF;
-}
+// .button-white {
+//     color: #FFF;
+// }
 
 .tag {
     width: 124px;

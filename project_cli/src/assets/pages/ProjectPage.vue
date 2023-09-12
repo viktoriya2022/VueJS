@@ -1,40 +1,33 @@
 <template>
     <div>
         <HeaderBlock/>
-        <TitleBlock
-        :title="title"
-        :subtitle="subtitle"
-        :img="img"/>
-        <div class="button-container">
-            <div class="button-block center">
-                <button 
-                    v-for="(button) in tags" 
-                    :key="button.id"
-                    @click="getCards(button)">
-                    {{ button.title }}
-                </button>
-            </div>
-        </div>
-        <div class="card-block center">
-            <CardsBlock
-            v-for="(card) in cards" :key="card.id"
-            :cardTitle="cardTitle"
-            :cardSubtitle="cardSubtitle"
-            :cardImg="cardImg"
-            :tag="tag"
-            :card="card"
-            />
-        </div>
-        <div id="pages" class="pagination" >
-                <div v-for="item in items" :key="item.id">
-                    <div class="container">
-                        <svg class="pages" width="53" height="52" viewBox="0 0 53 52" :fill=" item.color" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="26.5" cy="26" r="25.5" :stroke="item.stroke"/>
-                        </svg>
-                        <h2 class="pagination-number">{{item.number}}</h2>
-                    </div>
+        <main>
+            <TitleBlock
+                :title="title"
+                :subtitle="subtitle"
+                :img="img"/>
+            <div class="button-container">
+                <div class="button-block center">
+                    <button 
+                        v-for="(button) in tags" 
+                        :key="button.id"
+                        @click="getCards(button)">
+                        {{ button.title }}
+                    </button>
                 </div>
-        </div>
+            </div>
+            <div class="card-block center">
+                <CardsBlock
+                v-for="(card) in cards" :key="card.id"
+                :cardTitle="cardTitle"
+                :cardSubtitle="cardSubtitle"
+                :cardImg="cardImg"
+                :tag="tag"
+                :card="card"
+                />
+            </div>
+            <PaginationBlock/>
+        </main>
         <FooterBlock/>
     </div>
 </template>
@@ -43,6 +36,7 @@
 import CardsBlock from '@/components/CardsBlock.vue';
 import FooterBlock from '@/components/FooterBlock.vue';
 import HeaderBlock from '@/components/HeaderBlock.vue';
+import PaginationBlock from '@/components/PaginationBlock.vue';
 import TitleBlock from '@/components/TitleBlock.vue';
 
 export default {
@@ -108,12 +102,6 @@ export default {
                 {id: 2, tag: 'kitchen', title:'Kitchen'},
                 {id: 3, tag: 'living_area', title:'Living area'}
             ], 
-            items: [
-                {id:1, number:'01', color: '#F4F0EC', stroke: 'none'}, 
-                {id:2, number:'02', color: 'white', stroke:'#CDA274'}, 
-                {id:3, number:'03', color: 'white',stroke:'#CDA274'}, 
-                {id:4, number:'>', color: 'white',stroke:'#CDA274'}, 
-            ]
         }
     },
     methods: {
@@ -126,7 +114,8 @@ export default {
     HeaderBlock,
     FooterBlock,
     TitleBlock,
-    CardsBlock
+    CardsBlock,
+    PaginationBlock
 }
 };
 </script>
@@ -162,25 +151,5 @@ button:hover {
     grid-template-columns: repeat(auto-fit, 550px);
     gap: 100px;
 }
-.pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    margin-top: 51px;
-}
-.container {
-    margin-top: 61px;
-    position: relative;
-}
 
-.pages {
-    position: absolute;
-}
-
-.pagination-number {
-    position: absolute;
-    top: 12px;
-    right: -37px;
-}
 </style>

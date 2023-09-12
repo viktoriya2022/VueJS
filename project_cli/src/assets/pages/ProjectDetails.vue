@@ -1,0 +1,103 @@
+<template>
+    <div>
+        <HeaderBlock/>
+        <div class="title">
+            <div class="img">
+            </div>
+        </div>
+        <main class="center">
+            <section class="text-container">
+                <div class="text-block">
+                    <h2 class="text-title">Minimal Look Bedrooms</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.
+
+
+                    In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.</p>
+                </div>
+            </section>
+            <section class="slider">
+                <ProjectSlider
+                    :slider_data="sliderItems"/>
+            </section>
+        </main>
+        <FooterBlock/>
+    </div>
+</template>
+
+<script>
+import FooterBlock from '@/components/FooterBlock.vue';
+import HeaderBlock from '@/components/HeaderBlock.vue';
+import ProjectSlider from '@/components/ProjectSlider.vue';
+
+export default {
+    name: 'ProjectDetails',
+    data() {
+        return {
+            sliderItems: [
+                {id: 1, name: 'img1', img: 'SliderPhoto.png'},
+                {id: 2, name: 'img2', img: 'SliderPhoto.png'},
+                {id: 3, name: 'img3', img: 'SliderPhoto.png'},
+                {id: 4, name: 'img4', img: 'SliderPhoto.png'},
+                {id: 5, name: 'img5', img: 'SliderPhoto.png'},
+            ]
+       }
+    },
+    methods: {
+    },
+
+    components: { 
+        HeaderBlock, 
+        FooterBlock, 
+        ProjectSlider }
+};
+</script>
+
+<style lang="scss" scoped>
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+.img{
+    background-image: url("../../../public/images/ProjectDetails.jpg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    max-width: 100vw;
+    height: 30vh;
+}
+.text-container {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.text-block {
+    width: 660px;
+    height: 360px;
+}
+.text-title {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 62.5px */
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.text {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: 0.22px;
+}
+.slider {
+text-align: center;
+}
+</style>

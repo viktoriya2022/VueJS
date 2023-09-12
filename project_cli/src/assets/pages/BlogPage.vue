@@ -1,14 +1,15 @@
 <template>
     <div>
         <HeaderBlock/>
-        <TitleBlock
+        <main>
+            <TitleBlock
         :title="title"
         :subtitle="subtitle"
         :img="img"/>
         <section class="latest_post center">
             <div class="article-heading">Latest Post</div>
             <div class="latest_post-content">
-                <img class="latest_post-img" src= "../images/Photo_12.png" alt="picture">
+                <img class="latest_post-img" src= "../../../public/images/Photo_12.png" alt="picture">
                 <div class="blog-subcontent">
                     <p class="blog-text">Low Cost Latest Invented Interior Designing Ideas</p>
                     <div class="latest_post-info">
@@ -56,17 +57,9 @@
                         </div>
                     </div>
             </div>
-            <div id="pages" class="pagination" >
-                <div v-for="item in items" :key="item.id">
-                    <div class="container">
-                        <svg class="pages" width="53" height="52" viewBox="0 0 53 52" :fill=" item.color" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="26.5" cy="26" r="25.5" :stroke="item.stroke"/>
-                        </svg>
-                        <h2 class="pagination-number">{{item.number}}</h2>
-                    </div>
-                </div>
-            </div>
+            <PaginationBlock/>
         </section>
+        </main>
         <FooterBlock/>
     </div>
 </template>
@@ -74,6 +67,7 @@
 <script>
 import FooterBlock from '@/components/FooterBlock.vue';
 import HeaderBlock from '@/components/HeaderBlock.vue';
+import PaginationBlock from '@/components/PaginationBlock.vue';
 import TitleBlock from '@/components/TitleBlock.vue';
 
 export default {
@@ -121,18 +115,12 @@ export default {
                 date: '25 December, 2022'
              }
             ],
-            items: [
-                {id:1, number:'01', color: '#F4F0EC', stroke: 'none'}, 
-                {id:2, number:'02', color: 'white', stroke:'#CDA274'}, 
-                {id:3, number:'03', color: 'white',stroke:'#CDA274'}, 
-                {id:4, number:'>', color: 'white',stroke:'#CDA274'}, 
-            ]
         };
     },
     mounted() {
     },
     methods: {},
-    components: { HeaderBlock, FooterBlock, TitleBlock }
+    components: { HeaderBlock, FooterBlock, TitleBlock, PaginationBlock }
 };
 </script>
 
@@ -141,34 +129,15 @@ export default {
     margin-bottom: 252px;
 }
 
-.blog-title {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 200px;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.blog-subtitle {
-    width: 500px;
-    height: 180px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.title-img {
-    width: 100%;
-    max-width: 1900px;    
-}
  .latest_post-par {
     margin-bottom: 25px;
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    letter-spacing: 0.22px;
  }
 
 .latest_post-img {
@@ -195,7 +164,7 @@ export default {
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
-    line-height: 125%; /* 62.5px */
+    line-height: 125%; 
     letter-spacing: 1px;  
 }
 
@@ -206,7 +175,6 @@ export default {
     flex-wrap: wrap;
     margin-top: 30px;
 }
-
 
 .blog-item {
     display: inline-flex;
@@ -238,7 +206,7 @@ export default {
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 125%; /* 31.25px */
+    line-height: 125%; 
     letter-spacing: 0.5px;
     margin-top: 21px;
     margin-bottom: 30px;
@@ -261,17 +229,6 @@ export default {
     align-items: center;
 }
 
-.blog-button {
-    height: 50px;
-}
-
-.item-colour {
-    background-color: #F4F0EC;
-}
-
-.button-white {
-    color: #FFF;
-}
 
 .tag {
     width: 124px;
@@ -306,7 +263,10 @@ export default {
     gap: 80px;
     margin-top: 51px;
 }
-
+.pages:hover circle{
+    stroke: none;
+    fill: #F4F0EC;
+ }
 .container {
     position: relative;
 }
@@ -319,41 +279,6 @@ export default {
     position: absolute;
     top: 12px;
     right: -37px;
-}
-
-.article_block {
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.details-block {
-    display: flex;
-    gap: 52px;
-    margin-bottom: 96px;
-}
-
-.tags-block {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 11px;
-    margin-top: 24px;
-}
-
-.tag-button {
-    display: flex;
-    padding: 9px 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    background: #F4F0EC;
-}
-
-.tag-button:hover {
-    background: black;
-    color:white
 }
 
 </style>

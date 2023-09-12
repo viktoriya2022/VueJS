@@ -1,22 +1,28 @@
 <template>
   <div id="app">
-    <ProjectPage/>
     <!-- <IndexPage/> -->
     <!-- <BlogPage/> -->
     <!-- <BlogDetails/> -->
+    <!-- <ProjectPage/> -->
+    <ProjectDetails/>
   </div>
 </template>
 
 <script>
-import ProjectPage from './assets/pages/ProjectPage.vue';
 // import IndexPage from './assets/pages/IndexPage.vue';
 // import BlogPage from './assets/pages/BlogPage.vue'
 // import BlogDetails from './assets/pages/BlogDetails.vue';
+// import ProjectPage from './assets/pages/ProjectPage.vue';
+import ProjectDetails from './assets/pages/ProjectDetails.vue';
 
 export default {
   name: 'App',
   components: {
-    ProjectPage
+    // IndexPage
+    // BlogPage
+    // BlogDetails
+    // ProjectPage
+    ProjectDetails
 }
 }
 </script>

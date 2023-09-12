@@ -14,26 +14,12 @@
 export default {
     name: 'TitleBlock',
     props: ['img', 'title', 'subtitle'],
-    data() {
-        return {
-            
-        };
-    },
-
-    mounted() {
-        
-    },
-
-    methods: {
-        
-    },
 };
+
 </script>
 
 <style lang="scss" scoped>
-.blog {
-    margin-bottom: 252px;
-}
+
 .blog-title {
     display: flex;
     justify-content: center;
@@ -54,17 +40,20 @@ export default {
     align-items: center;
     justify-content: center;
 }
-.title-img {
-    width: 100%;
-    max-width: 1900px;    
+
+.title-img{
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 30vh;
 }
 .article-heading {
     color: #292F36;
     font-family: DM Serif Display;
     font-size: 50px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 62.5px */
+    font-weight: 400;/* 62.5px */
     letter-spacing: 1px;  
 }
 .project-subtitle {
