@@ -3,173 +3,184 @@
         <HeaderBlock/>
         <main>
             <section class="banner center">
-        <img class="banner-img" src="../../../public/images/Banner.png" alt="banner">
-        <div class="intro">
-            <h2 class="intro-title">Let Your Home 
-                Be Unique</h2>
-            <h2 class="intro-subtitle">There are many variations of the passages of
-                lorem Ipsum fromavailable, majority.</h2>
-            <div class="intro-buttom">
-                <a class="intro-buttom-text" href="#">Get Started</a>
-                <img src="../../../public/images/Vector.png" alt="">
-            </div>
-        </div>
-        </section>
-        <section class="project center">
-            <div class="heading ">
-                <div class="heading-title">Follow Our Projects</div>
-                <div class="heading-subtitle">It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</div>
-            </div>
-            <div class="project-block">
-                <div class="kitchen">
-                    <img class="top-left" src="../../../public/images/Photo_1.png" alt="">
-                    <div class="project-block_text">
-                        <div class="project-subcontent">
-                            <h3 class="project-title">Modern Kitchen</h3>
-                            <h3 class="project-subtitle">Decor / Artchitecture</h3>
-                        </div>
-                        <a href="#">
-                            <img src="../../../public/images/project-button.svg" alt="">
-                        </a>
-
+                <img class="banner__img" src="../../../public/images/Banner.png" alt="banner">
+                <div class="intro">
+                <h2 class="intro__title">Let Your Home 
+                    Be Unique</h2>
+                <h2 class="intro__subtitle">There are many variations of the passages of
+                    lorem Ipsum fromavailable, majority.</h2>
+                <div class="intro__buttom">
+                    <a class="intro__buttom-text" href="#">Get Started</a>
+                    <img src="../../../public/images/Vector.png" alt="">
+                </div>
+                </div>
+            </section>
+            <section class="project center">
+                <div class="heading ">
+                    <div class="heading__title">
+                        Follow Our Projects
+                    </div>
+                    <div class="heading__subtitle">
+                        It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.
                     </div>
                 </div>
-                <div class="kitchen">
-                    <img class="top-right" src="../../../public/images/Photo_2.png" alt="">
-                    <div class="project-block_text">
-                        <div class="project-subcontent">
-                            <h3 class="project-title">Modern Kitchen</h3>
-                            <h3 class="project-subtitle">Decor / Artchitecture</h3>
+                <div class="project__block">
+                    <div class="kitchen">
+                        <img class="project__top-left" src="../../../public/images/Photo_1.png" alt="">
+                        <div class="project__text">
+                            <div class="project__subcontent">
+                                <h3 class="project__title">Modern Kitchen</h3>
+                                <h3 class="project__subtitle">Decor / Artchitecture</h3>
+                            </div>
+                            <a href="#">
+                                <svg class="button" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
+                                <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
                         </div>
-                        <a href="#">
-                            <img src="../../../public/images/project-button.svg" alt="">
-                        </a>
-
+                    </div>
+                    <div class="kitchen">
+                        <img class="project__top-right" src="../../../public/images/Photo_2.png" alt="">
+                        <div class="project__text">
+                            <div class="project__subcontent">
+                                <h3 class="project__title">Modern Kitchen</h3>
+                                <h3 class="project__subtitle">Decor / Artchitecture</h3>
+                            </div>
+                            <a href="#">
+                                <svg class="button" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
+                                <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project-block">
-                <div class="kitchen">
-                    <img class="bottom-left" src="../../../public/images/Photo_3.png" alt="">
-                    <div class="project-block_text">
-                        <div class="project-subcontent">
-                            <h3 class="project-title">Modern Kitchen</h3>
-                            <h3 class="project-subtitle">Decor / Artchitecture</h3>
+                <div class="project__block">
+                    <div class="kitchen">
+                        <img class="project__bottom-left" src="../../../public/images/Photo_3.png" alt="">
+                        <div class="project__text">
+                            <div class="project__subcontent">
+                                <h3 class="project__title">Modern Kitchen</h3>
+                                <h3 class="project__subtitle">Decor / Artchitecture</h3>
+                            </div>
+                            <a href="#">
+                                <svg class="button" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
+                                <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>                        </div>
+                    </div>
+                    <div class="kitchen">
+                        <img class="project__bottom-right" src="../../../public/images/Photo_4.png" alt="">
+                        <div class="project__text">
+                            <div class="project__subcontent">
+                                <h3 class="project__title">Modern Kitchen</h3>
+                                <h3 class="project__subtitle">Decor / Artchitecture</h3>
+                            </div>
+                            <a href="#">
+                                <svg class="button" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
+                                <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
                         </div>
-                        <a href="#">
-                            <img src="../../../public/images/project-button.svg" alt="">
-                        </a>
-
                     </div>
                 </div>
-                <div class="kitchen">
-                    <img class="bottom-right" src="../../../public/images/Photo_4.png" alt="">
-                    <div class="project-block_text">
-                        <div class="project-subcontent">
-                            <h3 class="project-title">Modern Kitchen</h3>
-                            <h3 class="project-subtitle">Decor / Artchitecture</h3>
-                        </div>
-                        <a href="#">
-                            <img src="../../../public/images/project-button.svg" alt="">
-                        </a>
-
+            </section>
+            <section class="counter">
+                <div class="counter__block center">
+                    <div class="counter__item">
+                        <h2 class="counter__number">12</h2>
+                        <h2 class="counter__text">Years Of Experiance</h2>
+                    </div>
+                    <div class="counter__line"></div>
+                    <div class="counter__item">
+                        <h2 class="counter__number">85</h2>
+                        <h2 class="counter__text">Success Project</h2>
+                    </div>
+                    <div class="counter__line"></div>
+                    <div class="counter__item">
+                        <h2 class="counter__number">15</h2>
+                        <h2 class="counter__text">Active Project</h2>
+                    </div>
+                    <div class="counter__line"></div>
+                    <div class="counter__item">
+                        <h2 class="counter__number">95</h2>
+                        <h2 class="counter__text">Happy CUstomers</h2>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="counter">
-            <div class="counter-block center">
-                <div class="counter-item">
-                    <h2 class="counter-number">12</h2>
-                    <h2 class="counter-text">Years Of Experiance</h2>
+            </section>
+            <section class="blog center">
+                <div class="heading ">
+                    <div class="heading__title">Articles & News</div>
+                    <div class="heading__subtitle">It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.</div>
                 </div>
-                <div class="line"></div>
-                <div class="counter-item">
-                    <h2 class="counter-number">85</h2>
-                    <h2 class="counter-text">Success Project</h2>
-                </div>
-                <div class="line"></div>
-                <div class="counter-item">
-                    <h2 class="counter-number">15</h2>
-                    <h2 class="counter-text">Active Project</h2>
-                </div>
-                <div class="line"></div>
-                <div class="counter-item">
-                    <h2 class="counter-number">95</h2>
-                    <h2 class="counter-text">Happy CUstomers</h2>
-                </div>
-            </div>
-        </section>
-        <section class="blog center">
-            <div class="heading ">
-                <div class="heading-title">Articles & News</div>
-                <div class="heading-subtitle">It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.</div>
-            </div>
-            <div class="blog-items center">
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <div class="tag">
-                            <h3 class="tag-text">Kitchan Design</h3>
+                <div class="blog__items center">
+                    <div class="blog__item">
+                        <div class="blog__content">
+                            <div class="tag">
+                                <h3 class="tag__text">Kitchan Design</h3>
+                            </div>
+                            <img class="blog__img" src="../../../public/images/Photo_5.png" alt="">
+                            <div class="blog__subcontent">
+                                <div class="blog__text">Let’s Get Solution For Building Construction Work</div>
+                                <div class="blog__date">
+                                        <h3 class="blog__date-title">26 December,2022 </h3>
+                                    <a href="#">
+                                        <svg class="blog__button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
+                                            <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <img class="blog-img" src="../../../public/images/Photo_5.png" alt="">
-                        <div class="blog-subcontent">
-                            <div class="blog-text">Let’s Get Solution For Building Construction Work</div>
-                            <div class="blog-date">
-                                    <h3 class="date-title">26 December,2022 </h3>
-                                <a href="#">
-                                    <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
-                                        <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </a>
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__content">
+                            <div class="tag">
+                                <h3 class="tag__text">Living Design</h3>
+                            </div>
+                            <img class="blog__img" src="../../../public/images/Photo_6.png" alt="">
+                            <div class="blog__subcontent">
+                                <div class="blog__text">Low Cost Latest Invented Interior Designing
+                                    Ideas.</div>
+                                <div class="blog__date">
+                                        <h3 class="blog__date-title">22 December,2022  </h3>
+                                    <a href="#">
+                                        <svg class="blog__button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
+                                            <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__content">
+                            <div class="tag">
+                                <h3 class="tag__text">Interior Design</h3>
+                            </div>
+                            <img class="blog__img" src="../../../public/images/Photo_7.png" alt="">
+                            <div class="blog__subcontent">
+                                <div class="blog__text">Best For Any Office & Business Interior 
+                                    Solution</div>
+                                <div class="blog__date">
+                                        <h3 class="blog__date-title">25 December,2022 </h3>
+                                    <a href="#">
+                                        <svg class="blog__button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
+                                            <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <div class="tag">
-                            <h3 class="tag-text">Living Design</h3>
-                        </div>
-                        <img class="blog-img" src="../../../public/images/Photo_6.png" alt="">
-                        <div class="blog-subcontent">
-                            <div class="blog-text">Low Cost Latest Invented Interior Designing
-                                Ideas.</div>
-                            <div class="blog-date">
-                                    <h3 class="date-title">22 December,2022  </h3>
-                                <a href="#">
-                                    <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
-                                        <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="blog-content">
-                        <div class="tag">
-                            <h3 class="tag-text">Interior Design</h3>
-                        </div>
-                        <img class="blog-img" src="../../../public/images/Photo_7.png" alt="">
-                        <div class="blog-subcontent">
-                            <div class="blog-text">Best For Any Office & Business Interior 
-                                Solution</div>
-                            <div class="blog-date">
-                                    <h3 class="date-title">25 December,2022 </h3>
-                                <a href="#">
-                                    <svg class="blog_button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
-                                        <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
         </main>
         <FooterBlock/>
     </div>
@@ -198,10 +209,10 @@ export default {
     align-content: center;
     justify-content: flex-start;
     align-items: center;
-}
-
-.banner-img {
-border-radius: 70px;
+    
+    &__img {
+    border-radius: 70px;
+    }
 }
 
 .intro {
@@ -213,67 +224,49 @@ border-radius: 70px;
     justify-content: start;
     gap: 18px;
     flex-direction: column;
-}
-.intro-title {
-    color: #292F36;
-    font-family: DM Serif Display; 
-    font-size: 65px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%;
-}
 
-.intro-subtitle {
-    color: #4D5053;
-    font-family: Jost;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; 
-    letter-spacing: 0.22px;
-}
+    &__title {
+        color: #292F36;
+        font-family: DM Serif Display; 
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+    }
+    
+    &__subtitle {
+        color: #4D5053;
+        font-family: Jost;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        letter-spacing: 0.22px;
+    }
+    
+    &__buttom {
+        width: 220px;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        border-radius: 18px;
+        background: #292F36;
+        box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+    }
 
-.intro-buttom {
-    width: 220px;
-    height: 75px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    border-radius: 18px;
-    background: #292F36;
-    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
-}
-.intro-buttom-text {
-    color: #FFF;
-    text-align: center;
-    font-family: Jost;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 125%; 
-    letter-spacing: 0.36px;
-}
-.project {
-    margin-top: 90px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 56px;
-}
-
-.top-left {
-    border-radius: 0 90px 0 0;
-}
-.top-right {
-    border-radius: 90px 0 0 0;
-}
-.bottom-left {
-    border-radius:  0 0 90px 0;
-}
-.bottom-right {
-    border-radius: 0 0 0 90px;
+    &__buttom-text {
+        color: #FFF;
+        text-align: center;
+        font-family: Jost;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%; 
+        letter-spacing: 0.36px;
+    }
 }
 
 .heading {
@@ -285,61 +278,85 @@ border-radius: 70px;
     align-items: center;
     margin-left: 200px;
     gap: 8px;
+
+    &__title {
+        color: #292F36;
+        text-align: center;
+        font-family: DM Serif Display;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; /* 62.5px */
+        letter-spacing: 1px;
+    }
+    
+    &__subtitle {
+        color: #4D5053;
+        text-align: center;
+        font-family: Jost;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 33px */
+        letter-spacing: 0.22px;
+    }
 }
 
-.heading-title {
-    color: #292F36;
-    text-align: center;
-    font-family: DM Serif Display;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 62.5px */
-    letter-spacing: 1px;
-}
-
-.heading-subtitle {
-    color: #4D5053;
-    text-align: center;
-    font-family: Jost;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 33px */
-    letter-spacing: 0.22px;
-}
-
-.project-block {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 550px);
-    gap: 100px;
-}
-
-.project-block_text {
+.project {
+    margin-top: 90px;
+    margin-bottom: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 24px;
-}
+    flex-direction: column;
+    gap: 56px;
 
-.project-title {
-    color: #292F36;
-    font-family: DM Serif Display;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 31.25px */
-    letter-spacing: 0.5px;
-}
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 550px);
+        gap: 100px;
+    }
 
-.project-subtitle {
-    color: #4D5053;
-    font-family: Jost;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 33px */
-    letter-spacing: 0.22px;
+    &__top-left {
+    border-radius: 0 90px 0 0;
+    }
+
+    &__top-right {
+        border-radius: 90px 0 0 0;
+    }
+
+    &__bottom-left {
+        border-radius:  0 0 90px 0;
+    }
+
+    &__bottom-right {
+        border-radius: 0 0 0 90px;
+    }
+    
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+    }
+    
+    &__title {
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; /* 31.25px */
+        letter-spacing: 0.5px;
+    }
+    
+    &__subtitle {
+        color: #4D5053;
+        font-family: Jost;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 33px */
+        letter-spacing: 0.22px;
+    }
 }
 
 .counter {
@@ -349,111 +366,59 @@ border-radius: 70px;
     align-items: center;
     justify-content: center;
     margin-bottom: 96px;
+
+    &__block {
+        display: flex;
+        gap: 76px;
+        justify-content: center;
+    }
+    &__line {
+        width: 1px;
+        height: 130px;
+        background: #CDA274;
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    &__number {
+        color: #CDA274;
+        font-family: DM Serif Display;
+        font-size: 85px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; /* 106.25px */
+        letter-spacing: 1.7px;
+    }
+    
+    &__text {
+        color: #4D5053;
+        font-family: Jost;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 33px */
+        letter-spacing: 0.22px;
+    }
 }
 
-.counter-block {
-    display: flex;
-    gap: 76px;
-    justify-content: center;
-}
-.line {
-    width: 1px;
-    height: 130px;
-    background: #CDA274;
+.button:hover circle{
+    fill: #e6dad0;
 }
 
-.counter-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
-
-.counter-number {
-    color: #CDA274;
-    font-family: DM Serif Display;
-    font-size: 85px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 106.25px */
-    letter-spacing: 1.7px;
-}
-
-.counter-text {
-    color: #4D5053;
-    font-family: Jost;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 33px */
-    letter-spacing: 0.22px;
-}
-// .blog-title {
-//     display: flex;
-//     justify-content: center;
-//     margin-top: 40px;
-//     margin-bottom: 200px;
-//     flex-direction: column;
-//     align-items: center;
-//     position: relative;
-// }
-
-// .blog-subtitle {
-//     width: 500px;
-//     height: 180px;
-//     background-color: white;
-//     position: absolute;
-//     bottom: 0;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .title-img {
-//     width: 100%;
-//     max-width: 1900px;    
-// }
-//  .latest_post-par {
-//     margin-bottom: 25px;
-//  }
-
-// .latest_post-img {
-//     border-radius: 50px;
-// }
-// .latest_post-info {
-//     display: contents;
-// }
-
-// .latest_post-content {
-//     margin-bottom: 156px;
-// }
-
-// .latest_post-content {
-//     display: flex;
-//     gap: 65px;
-//     padding: 22px;
-//     margin-top: 33px;
-// }
-
-// .article-heading {
-//     color: #292F36;
-//     font-family: DM Serif Display;
-//     font-size: 50px;
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: 125%; /* 62.5px */
-//     letter-spacing: 1px;  
-// }
-
-.blog-items {
+.blog {
+&__items {
     display: flex;
     justify-content: center;
     gap: 27px;
     flex-wrap: wrap;
     margin-top: 30px;
 }
-.blog-item {
+&__item {
     display: inline-flex;
     padding: 21px;
     align-items: flex-start;
@@ -465,19 +430,19 @@ border-radius: 70px;
     width: 337px;
 }
 
-.blog-item:hover {
+&__item:hover {
     background-color: #F4F0EC;
 }
 
-.blog-item:hover circle {
+&__item:hover circle {
     fill: white;
 }
 
-.blog-img {
+&__img {
     border-radius: 43px 43px 0 0;
 }
 
-.blog-text {
+&__text {
     color: #292F36;
     font-family: DM Serif Display;
     font-size: 25px;
@@ -489,7 +454,7 @@ border-radius: 70px;
     margin-bottom: 30px;
 }
 
-.date-title {
+&__date-title {
     color: #4D5053;
     font-family: Jost;
     font-size: 16px;
@@ -500,23 +465,12 @@ border-radius: 70px;
     text-transform: capitalize;
 }
 
-.blog-date {
+&__date {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-// .blog-button {
-//     height: 50px;
-// }
-
-// .item-colour {
-//     background-color: #F4F0EC;
-// }
-
-// .button-white {
-//     color: #FFF;
-// }
+}
 
 .tag {
     width: 124px;
@@ -531,17 +485,18 @@ border-radius: 70px;
     top: 249px;
     left: 51px;
     align-items: center;
+    
+    &__text {
+        color: #4D5053;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.16px;
+        text-transform: capitalize;
+    }
 }
 
-.tag-text {
-    color: #4D5053;
-    font-family: Jost;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-    letter-spacing: 0.16px;
-    text-transform: capitalize;
-}
 
 </style>
