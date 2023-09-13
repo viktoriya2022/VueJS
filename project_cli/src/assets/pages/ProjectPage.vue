@@ -6,9 +6,10 @@
                 :title="title"
                 :subtitle="subtitle"
                 :img="img"/>
-            <div class="button-container">
-                <div class="button-block center">
+            <div class="button__container">
+                <div class="button__block center">
                     <button 
+                        class="button"
                         v-for="(button) in tags" 
                         :key="button.id"
                         @click="getCards(button)">
@@ -18,12 +19,12 @@
             </div>
             <div class="card-block center">
                 <CardsBlock
-                v-for="(card) in cards" :key="card.id"
-                :cardTitle="cardTitle"
-                :cardSubtitle="cardSubtitle"
-                :cardImg="cardImg"
-                :tag="tag"
-                :card="card"
+                    v-for="(card) in cards" :key="card.id"
+                    :cardTitle="cardTitle"
+                    :cardSubtitle="cardSubtitle"
+                    :cardImg="cardImg"
+                    :tag="tag"
+                    :card="card"
                 />
             </div>
             <PaginationBlock/>
@@ -122,34 +123,35 @@ export default {
 
 <style lang="scss" scoped>
 
-.button-container {
-    display: flex;
-    justify-content: center;
-}
-.button-block {
-    display: flex;
-    width: 880px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 61px;
+.card-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 550px);
+    gap: 100px;
 }
 
-button {
+.button {
     height: 75px;
     width: 220px;
     border-radius: 18px;
     background: #FFF;
     border-color: #CDA274;
     font-size: 18px;
+    
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+    &__block {
+        display: flex;
+        width: 880px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 61px;
+    }
 }
 button:hover {
     background: #CDA274;
     color: white
-}
-.card-block {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 550px);
-    gap: 100px;
 }
 
 </style>

@@ -3,7 +3,7 @@
         <HeaderBlock/>
         <main>
             <div class="title">
-                <div class="img">
+                <div class="title__img">
                 </div>
             </div>
             <div id="app" class="main_container center">
@@ -102,15 +102,16 @@ export default {
     display: flex;
     justify-content: center;
     margin-bottom: 200px;
-}
-.img{
-    background-image: url("../../../public/images/Photo_13.png");
-    background-size: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    max-width: 100vw;
-    height: 30vh;
+    
+    &__img{
+        background-image: url("../../../public/images/Photo_13.png");
+        background-size: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        max-width: 100vw;
+        height: 30vh;
+    }
 }
 
 .article-heading {

@@ -1,5 +1,4 @@
 <template>
-    <!-- <div> -->
         <div >
             <div class="card">
             <img :src="card.cardImg" alt="picture">
@@ -11,11 +10,9 @@
                 <a href="#">
                     <img src="../assets/images/project-button.svg" alt="">
                 </a>
-
             </div>
         </div>
         </div>
-    <!-- </div> -->
 </template>
 
 <script>

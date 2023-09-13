@@ -2,15 +2,15 @@
   <header class="header center">
         <a href="#">
             <div class="logo">
-            <img class="logo-img" src="../assets/images/Logo.png" alt="logo">
-            <h2 class="logo-text">Interno</h2>
+            <img class="logo__img" src="../assets/images/Logo.png" alt="logo">
+            <h2 class="logo__text">Interno</h2>
         </div>
         </a>
         <div class="menubar">
             <div class="menu">
-                <a class="menu-text">Home</a>
-                <a class="menu">Project</a>
-                <a class="menu">Blog</a>
+                <a class="menu__text">Home</a>
+                <a class="menu__text">Project</a>
+                <a class="menu__text">Blog</a>
             </div>
         </div>
     </header>
@@ -24,11 +24,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss"  scoped>
 
 .header {
     min-height: 50px;
-    /* background: #222222; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,20 +42,22 @@ export default {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-.logo-img {
-    width: 34px;
-    height: 34px;
+    
+    &__img {
+        width: 34px;
+        height: 34px;
+    }
+
+    &__text {
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;   
+    }
 }
 
-.logo-text {
-    color: #292F36;
-    /* font-family: DM Serif Display; */
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%;   
-}
 
 .menubar {
     display: flex;
@@ -73,16 +74,15 @@ export default {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 125%; /* 25px */
+    line-height: 125%; 
+    
+    &__text {
+        color: #292F36;
+        font-family: Jost;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; 
     }
-
-.menu-text {
-    color: #292F36;
-    font-family: Jost;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 25px */
 }
-
 </style>

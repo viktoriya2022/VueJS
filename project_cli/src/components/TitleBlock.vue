@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="blog-title">
-        <img class="title-img" :src="img" alt="picture">
-        <div class="blog-subtitle blog-img">
-            <span class="article-heading">{{ title }}</span>
-            <span class="project-subtitle">{{ subtitle }}</span>
+        <div class="title">
+        <img class="title__img" :src="img" alt="picture">
+        <div class="text-block">
+            <span class="text-block__heading">{{ title }}</span>
+            <span class="text-block__subheading">{{ subtitle }}</span>
         </div>
         </div>
     </div>
@@ -20,7 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 
-.blog-title {
+.title {
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -28,8 +28,16 @@ export default {
     flex-direction: column;
     align-items: center;
     position: relative;
+    
+    &__img{
+        background-size: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 30vh;
+    }
 }
-.blog-subtitle {
+.text-block {
     width: 500px;
     height: 180px;
     background-color: white;
@@ -39,33 +47,26 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 43px 43px 0 0;
+    
+    &__heading {
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;/* 62.5px */
+        letter-spacing: 1px;  
+    }
+    
+    &__subheading {
+        color: #4D5053;
+        font-family: Jost;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.22px;
+    }
 }
 
-.title-img{
-    background-size: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    height: 30vh;
-}
-.article-heading {
-    color: #292F36;
-    font-family: DM Serif Display;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;/* 62.5px */
-    letter-spacing: 1px;  
-}
-.project-subtitle {
-    color: #4D5053;
-    font-family: Jost;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 0.22px;
-}
-.blog-img {
-    border-radius: 43px 43px 0 0;
-}
 </style>

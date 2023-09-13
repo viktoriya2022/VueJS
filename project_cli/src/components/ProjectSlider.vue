@@ -15,17 +15,9 @@
         </div>
         <div class="button-block">
             <button @click="prevSlide"></button>
-            <!-- <svg class="button" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" 
-                @click="prevSlide">
-                <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/>
-            </svg> -->
             <button @click="nextSlide"></button>
-            <!-- <svg class="button"  xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" 
-            @click="nextSlide">
-                <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/> -->
-            <!-- </svg> -->
         </div>
-        </div>
+    </div>
 </template>
 
 <script>
@@ -96,15 +88,6 @@ button {
     height: 20px;
     border-radius: 50%;
 }
-// .button:hover {
-//     background-color:rgb(252, 251, 245)
-// }
-// .button:active {
-//     box-shadow: -1px 3px 14px -2px rgba(0,0,0,0.75);
-// }
-// button:hover {
-//     background-color:rgb(223, 220, 202)
-// }
 button:active {
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75) inset;
 }

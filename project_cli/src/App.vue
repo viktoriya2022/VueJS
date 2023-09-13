@@ -4,7 +4,7 @@
     <!-- <BlogPage/> -->
     <!-- <BlogDetails/> -->
     <!-- <ProjectPage/> -->
-    <ProjectDetails/>
+    <!-- <ProjectDetails/> -->
   </div>
 </template>
 
@@ -13,7 +13,7 @@
 // import BlogPage from './assets/pages/BlogPage.vue'
 // import BlogDetails from './assets/pages/BlogDetails.vue';
 // import ProjectPage from './assets/pages/ProjectPage.vue';
-import ProjectDetails from './assets/pages/ProjectDetails.vue';
+// import ProjectDetails from './assets/pages/ProjectDetails.vue';
 
 export default {
   name: 'App',
@@ -22,7 +22,7 @@ export default {
     // BlogPage
     // BlogDetails
     // ProjectPage
-    ProjectDetails
+    // ProjectDetails
 }
 }
 </script>
