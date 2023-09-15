@@ -9,12 +9,17 @@
             <div id="app" class="main_container center">
                 <article_block>
                     <div class="details-block">
-                <section class="article_block">
-                    <div 
-                        v-for="(item) in articles" 
-                        :key="item.id">
+                    <section class="article_block">
+                        <div class="heading-block">
+                            <h2 class="article-heading">Lets Get Solution for Building Construction Work</h2>
+                            <img class="img" src="../../../public/images/Photo_14.png" alt="picture">
+                                <p class="date">22 December,2022  </p>
+                                <p class="project-subtitle">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don t look even slightly believable.Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                <img class="quote" src="../../../public/images/Quotes.png" alt="">
+                        </div>
+                    <div v-for="(item) in current" :key="item.id" class="">
                         <span class="article-heading">{{ item.title }}</span>
-                        <img class="latest_post-img" :src="item.img" alt="picture">
+                        <img class="img" :src="item.img" alt="picture">
                         <p class="project-subtitle">{{ item.text }}</p>
                     </div>
                 </section>
@@ -46,10 +51,12 @@ export default {
     name: 'BlogDetails',
     data() {
         return {
+            current: [
+                ],
             articles: [
                 { id: 0, 
                 tag: 'kitchen', 
-                title: 'Lets Get Solution for Building Construction Work', 
+                title: 'Design sprints are great', 
                 img: "../images/Photo_14.png", 
                 text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don t look even slightly believable.Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.'},
                 { id: 1, 
@@ -89,7 +96,8 @@ export default {
     },
     methods: {
         getArticle(button) {
-            this.articles = this.articles.filter(elem => elem.tag === button.tag);
+            // this.articles = this.articles.filter(elem => elem.tag === button.tag);
+            this.current = this.articles.filter((elem) => elem.tag == button.tag);
         }
     },
 
@@ -114,6 +122,16 @@ export default {
     }
 }
 
+.img {
+    border-radius: 8%;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+
+.quote {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
 .article-heading {
     color: #292F36;
     font-family: DM Serif Display;
@@ -121,7 +139,8 @@ export default {
     font-style: normal;
     font-weight: 400;
     line-height: 125%; 
-    letter-spacing: 1px;  
+    letter-spacing: 1px; 
+    margin-bottom: 25px; 
 }
 
 .article_block {
@@ -131,6 +150,18 @@ export default {
     gap: 30px;
 }
 
+.date {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.16px;
+    text-transform: capitalize;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
 .details-block {
     display: flex;
     gap: 52px;
