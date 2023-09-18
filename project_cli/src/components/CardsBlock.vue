@@ -7,8 +7,11 @@
                     <h3 class="title">{{ card.cardTitle }}</h3>
                     <h3 class="subtitle">{{ card.cardSubtitle }}</h3>
                 </div>
-                <a href="#">
-                    <img src="../assets/images/project-button.svg" alt="">
+                <a class="button" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                    <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
+                    <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -44,19 +47,19 @@ export default {
     gap: 56px;
 }
 
-
-
-// .card-block {
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, 550px);
-//     gap: 100px;
-// }
-
+.card {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+    .button:hover circle{
+    fill: #e6dad0;
+}
 .card-block_text {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 24px;
+    width: 585px;
 }
 
 .title {

@@ -9,17 +9,18 @@
             <div class="button__container">
                 <div class="button__block center">
                     <button 
-                        class="button"
-                        v-for="(button) in tags" 
                         :key="button.id"
-                        @click="getCards(button)">
+                        v-for="(button) in allTags" 
+                        @click="getCards(button)"
+                        class="button">
                         {{ button.title }}
                     </button>
                 </div>
             </div>
             <div class="card-block center">
                 <CardsBlock
-                    v-for="(card) in cards" :key="card.id"
+                    v-for="(card) in allCards" 
+                    :key="card.id"
                     :cardTitle="cardTitle"
                     :cardSubtitle="cardSubtitle"
                     :cardImg="cardImg"
@@ -39,77 +40,25 @@ import FooterBlock from '@/components/FooterBlock.vue';
 import HeaderBlock from '@/components/HeaderBlock.vue';
 import PaginationBlock from '@/components/PaginationBlock.vue';
 import TitleBlock from '@/components/TitleBlock.vue';
+import { mapGetters } from 'vuex';
 
 export default {
     name: 'ProjectPage',
+    computed: {
+        ...mapGetters(['allCards', 'allTags', 'getCards']),
+    },
     data() {
         return {
             title: 'Our Project',
             subtitle: 'Home / Project',
             img: '../images/Photo_16.png',
-            cards: [
-                {
-                    cardTitle: 'Minimal Bedroom',
-                    cardSubtitle: 'Decor / Artchitecture',
-                    cardImg: '../images/Photo_17.png',
-                    tag: 'bedroom'
-                },
-                {
-                    cardTitle: 'Minimal Bedroom',
-                    cardSubtitle: 'Decor / Artchitecture',
-                    cardImg: '../images/Photo_18.png',
-                    tag: 'bathroom'
-                },
-                {
-                    cardTitle: 'Classic Bedroom',
-                    cardSubtitle: 'Decor / Artchitecture',
-                    cardImg: '../images/Photo_19.png',
-                    tag: 'kitchen'
-                },
-                {
-                    cardTitle: 'Modern Bedroom',
-                    cardSubtitle: 'Decor / Artchitecture',
-                    cardImg: '../images/Photo_20.png',
-                    tag: 'bedroom'
-                },
-                {
-                    cardTitle: 'Minimal Bedroom table',
-                    cardSubtitle: 'Decor / Artchitecture',
-                    cardImg: '../images/Photo_21.png',
-                    tag: 'bedroom'
-                },
-                {
-                    cardTitle: 'System Table',
-                    cardSubtitle: 'Decor / Artchitecture',
-                    cardImg: '../images/Photo_22.png',
-                    tag: 'bedroom'
-                },
-                {
-                    cardTitle: 'Modern Bedroom',
-                    cardSubtitle: 'Decor / Artchitecture',
-                    cardImg: '../images/Photo_23.png',
-                    tag: 'bedroom'
-                },
-                {
-                    cardTitle: 'Modern Bedroom',
-                    cardSubtitle: 'Decor / Artchitecture',
-                    cardImg: '../images/Photo_24.png',
-                    tag: 'bedroom'
-                },
-            ],
-            tags: [
-                {id: 0, tag: 'bathroom', title:'Bathroom'},
-                {id: 1, tag: 'bedroom', title:'Bedroom'},
-                {id: 2, tag: 'kitchen', title:'Kitchen'},
-                {id: 3, tag: 'living_area', title:'Living area'}
-            ], 
         }
     },
-    methods: {
-        getCards(button) {
-            this.card = this.card.filter(elem => elem.tag === button.tag);
-        }
-    },
+    // methods: {
+    //     getCards(button) {
+    //         this.cards = this.cards.filter((elem) => elem.tag === button.tag);
+    //     }
+    // },
 
     components: {
     HeaderBlock,
@@ -117,16 +66,17 @@ export default {
     TitleBlock,
     CardsBlock,
     PaginationBlock
-}
+    }
 };
 </script>
 
 <style lang="scss" scoped>
 
 .card-block {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 550px);
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, 550px);
     gap: 100px;
+    column-count: 2;
 }
 
 .button {

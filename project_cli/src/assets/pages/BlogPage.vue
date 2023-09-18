@@ -36,7 +36,7 @@
                 <div class="article-heading">Articles & News</div>
     
                 <div id="blog" class="blog__items center">
-                        <div v-for="card in cards" :key="card.id" class="blog__item">
+                        <div v-for="card in allBlogCards" :key="card.id" class="blog__item">
                             <div class="blog__content">
                                 <div class="tag">
                                     <h3 class="tag__text">{{ card.tag }}</h3>
@@ -69,52 +69,19 @@ import FooterBlock from '@/components/FooterBlock.vue';
 import HeaderBlock from '@/components/HeaderBlock.vue';
 import PaginationBlock from '@/components/PaginationBlock.vue';
 import TitleBlock from '@/components/TitleBlock.vue';
+import { mapGetters } from 'vuex';
 
 export default {
     name: 'BlogPage',
+    computed: {
+        ...mapGetters(['allBlogCards']),
+    },
+
     data: function() {
         return {
             title: 'Articles & News',
             subtitle: 'Home / Blog',
             img: "../images/Photo_11.png",
-            cards: [
-              { id: 1, 
-                tag: 'Kitchen Design', 
-                img: '../images/Photo_5.png', 
-                text: 'Let’s Get Solution For Building Construction Work',
-                date: '26 December, 2022',
-             },
-              { id: 2, 
-                tag: 'Living Design', 
-                img: '../images/Photo_6.png', 
-                text: 'Low Cost Latest Invented Interior Designing Ideas.',
-                date: '22 December, 2022'
-             },
-              { id: 3, 
-                tag: 'Interior Design', 
-                img: '../images/Photo_7.png', 
-                text: 'Best For Any Office & Business Interior Solution',
-                date: '25 December, 2022'
-             },
-              { id: 4, 
-                tag: 'Kitchen Design', 
-                img: '../images/Photo_8.png', 
-                text: 'Let’s Get Solution For Building Construction Work',
-                date: '26 December, 2022',
-             },
-              { id: 5, 
-                tag: 'Interior Design', 
-                img: '../images/Photo_9.png', 
-                text: 'Low Cost Latest Invented Interior Designing Ideas.',
-                date: '22 December, 2022'
-             },
-              { id: 6, 
-                tag: 'Interior Design', 
-                img: '../images/Photo_10.png', 
-                text: 'Best For Any Office & Business Interior Solution',
-                date: '25 December, 2022'
-             }
-            ],
         };
     },
     mounted() {

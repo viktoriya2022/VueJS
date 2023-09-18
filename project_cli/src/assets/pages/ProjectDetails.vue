@@ -17,7 +17,7 @@
             </section>
             <section class="slider">
                 <ProjectSlider
-                    :slider_data="sliderItems"/>
+                    :slider_data="allSliderItems"/>
             </section>
         </main>
         <FooterBlock/>
@@ -28,18 +28,24 @@
 import FooterBlock from '@/components/FooterBlock.vue';
 import HeaderBlock from '@/components/HeaderBlock.vue';
 import ProjectSlider from '@/components/ProjectSlider.vue';
+import { mapGetters } from 'vuex';
+
 
 export default {
     name: 'ProjectDetails',
+    computed: {
+        ...mapGetters(['allSliderItems']),
+    },
+
     data() {
         return {
-            sliderItems: [
-                {id: 1, name: 'img1', img: 'SliderPhoto.png'},
-                {id: 2, name: 'img2', img: 'SliderPhoto.png'},
-                {id: 3, name: 'img3', img: 'SliderPhoto.png'},
-                {id: 4, name: 'img4', img: 'SliderPhoto.png'},
-                {id: 5, name: 'img5', img: 'SliderPhoto.png'},
-            ]
+            // sliderItems: [
+            //     {id: 1, name: 'img1', img: 'SliderPhoto.png'},
+            //     {id: 2, name: 'img2', img: 'SliderPhoto.png'},
+            //     {id: 3, name: 'img3', img: 'SliderPhoto.png'},
+            //     {id: 4, name: 'img4', img: 'SliderPhoto.png'},
+            //     {id: 5, name: 'img5', img: 'SliderPhoto.png'},
+            // ]
        }
     },
     methods: {
