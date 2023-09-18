@@ -102,6 +102,70 @@ export default {
             {id: 2, tag: 'kitchen', title:'Kitchen'},
             {id: 3, tag: 'living_area', title:'Living area'}
         ],
+        articles: [
+            { id: 0, 
+            tag: 'kitchen', 
+            title: 'Design sprints are great: kitchen', 
+            img: "../images/Photo_14.png", 
+            text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don t look even slightly believable.Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.'},
+            { id: 1, 
+            tag: 'bedroom', 
+            title: 'Design sprints are great: bedroom',
+            img: '../images/Photo_15.png',
+            text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+            { id: 2, 
+            tag: 'bedroom', 
+            title: 'Design sprints are great: bedroom',
+            img: '../images/Photo_15.png',
+            text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+            { id: 3, 
+            tag: 'kitchen', 
+            title: 'Design sprints are great: kitchen',
+            img: '../images/Photo_9.png',
+            text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+            { id: 4, 
+            tag: 'kitchen_planning', 
+            title: 'Design sprints are great: kitchen_planning',
+            img: '../images/Photo_4.png',
+            text: 'KITCHEN PLANNING Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+            { id: 5, 
+            tag: 'kitchen_planning', 
+            title: 'Design sprints are great: kitchen_planning',
+            img: '../images/Photo_12.png',
+            text: 'OTHER KITCHEN PLANNINGLorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+            { id: 5, 
+            tag: 'kitchen_planning', 
+            title: 'Design sprints are great: kitchen_planning',
+            img: '../images/Photo_4.png',
+            text: 'OTHER KITCHEN PLANNINGLorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+            { id: 5, 
+            tag: 'architecture', 
+            title: 'Design sprints are great: architecture',
+            img: '../images/Photo_18.png',
+            text: 'OTHER KITCHEN PLANNINGLorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+            { id: 5, 
+            tag: 'architecture', 
+            title: 'Design sprints are great: architecture',
+            img: '../images/Photo_17.png',
+            text: 'OTHER KITCHEN PLANNINGLorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+            { id: 5, 
+            tag: 'architecture', 
+            title: 'Design sprints are great: architecture',
+            img: '../images/Photo_14.png',
+            text: 'OTHER KITCHEN PLANNINGLorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+            { id: 5, 
+            tag: 'building', 
+            title: 'Design sprints are great: building',
+            img: '../images/Photo_14.png',
+            text: 'OTHER KITCHEN PLANNINGLorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'},
+        ],
+        articlesTags: [
+            {id: 0, tag: 'kitchen', title:'Kitchen'},
+            {id: 1, tag: 'bedroom', title:'Bedroom'},
+            {id: 2, tag: 'building', title:'Building'},
+            {id: 3, tag: 'architecture', title:'Architecture'},
+            {id: 4, tag: 'kitchen_planning', title:'Kitchen Planning'}
+        ],
         sliderItems: [
             {id: 1, name: 'img1', img: 'SliderPhoto_1.png'},
             {id: 2, name: 'img2', img: 'SliderPhoto.png'},
@@ -120,8 +184,11 @@ export default {
         allTags(state) {
             return state.tags;
         },
-        getCards(getters, button) {
-            return getters.allCards.filter((elem) => elem.tag === button.tag);
+        allArticles(state) {
+            return state.articles;
+        },
+        allArticlesTags(state) {
+            return state.articlesTags;
         },
         allSliderItems(state) {
             return state.sliderItems;

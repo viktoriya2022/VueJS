@@ -11,7 +11,7 @@
                     <button 
                         :key="button.id"
                         v-for="(button) in allTags" 
-                        @click="getCards(button)"
+                        @click="filterByTag(button)"
                         class="button">
                         {{ button.title }}
                     </button>
@@ -19,7 +19,7 @@
             </div>
             <div class="card-block center">
                 <CardsBlock
-                    v-for="(card) in allCards" 
+                    v-for="(card) in sortedCards" 
                     :key="card.id"
                     :cardTitle="cardTitle"
                     :cardSubtitle="cardSubtitle"
@@ -45,20 +45,37 @@ import { mapGetters } from 'vuex';
 export default {
     name: 'ProjectPage',
     computed: {
-        ...mapGetters(['allCards', 'allTags', 'getCards']),
+        ...mapGetters([
+            'allCards', 
+            'allTags'
+        ]),
+        sortedCards() {
+            if (this.filteredCards.length) {
+                return this.filteredCards
+            } else {
+                return this.allCards
+            }
+        }
     },
     data() {
         return {
             title: 'Our Project',
             subtitle: 'Home / Project',
             img: '../images/Photo_16.png',
+            filteredCards: []
         }
     },
-    // methods: {
-    //     getCards(button) {
-    //         this.cards = this.cards.filter((elem) => elem.tag === button.tag);
-    //     }
-    // },
+    methods: {
+        filterByTag(button) {
+            this.filteredCards = [];
+            let vm = this;
+            this.allCards.map(function(item) {
+                if(item.tag === button.tag) {
+                    vm.filteredCards.push(item)
+                }
+            })
+        }
+    },
 
     components: {
     HeaderBlock,

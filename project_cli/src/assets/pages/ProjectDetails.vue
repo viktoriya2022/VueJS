@@ -39,13 +39,6 @@ export default {
 
     data() {
         return {
-            // sliderItems: [
-            //     {id: 1, name: 'img1', img: 'SliderPhoto.png'},
-            //     {id: 2, name: 'img2', img: 'SliderPhoto.png'},
-            //     {id: 3, name: 'img3', img: 'SliderPhoto.png'},
-            //     {id: 4, name: 'img4', img: 'SliderPhoto.png'},
-            //     {id: 5, name: 'img5', img: 'SliderPhoto.png'},
-            // ]
        }
     },
     methods: {
@@ -105,7 +98,6 @@ export default {
         letter-spacing: 0.22px;
     }
 }
-
 
 .slider {
 text-align: center;
