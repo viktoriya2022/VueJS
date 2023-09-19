@@ -9,8 +9,7 @@
                     Be Unique</h2>
                 <h2 class="intro__subtitle">There are many variations of the passages of
                     lorem Ipsum fromavailable, majority.</h2>
-                <div class="intro__buttom"
-                    @click="$router.push({ path: '/ProjectPage'})">
+                <div class="intro__buttom">
                     <a class="intro__buttom-text" href="#">Get Started</a>
                     <img src="../../../public/images/Vector.png" alt="">
                 </div>
@@ -33,8 +32,7 @@
                                 <h3 class="project__title">Modern Kitchen</h3>
                                 <h3 class="project__subtitle">Decor / Artchitecture</h3>
                             </div>
-                            <a href="#"
-                                @click="$router.push({ path: '/ProjectPage'})">
+                            <a href="#">
                                 <svg class="button" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -49,8 +47,7 @@
                                 <h3 class="project__title">Modern Kitchen</h3>
                                 <h3 class="project__subtitle">Decor / Artchitecture</h3>
                             </div>
-                            <a href="#"
-                                @click="$router.push({ path: '/ProjectPage'})">
+                            <a href="#">
                                 <svg class="button" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -67,8 +64,7 @@
                                 <h3 class="project__title">Modern Kitchen</h3>
                                 <h3 class="project__subtitle">Decor / Artchitecture</h3>
                             </div>
-                            <a href="#"
-                                @click="$router.push({ path: '/ProjectPage'})">
+                            <a href="#">
                                 <svg class="button" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -82,8 +78,7 @@
                                 <h3 class="project__title">Modern Kitchen</h3>
                                 <h3 class="project__subtitle">Decor / Artchitecture</h3>
                             </div>
-                            <a href="#"
-                                @click="$router.push({ path: '/ProjectPage'})">
+                            <a href="#">
                                 <svg class="button" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="35" cy="35" r="35" fill="#F4F0EC"/>
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -118,8 +113,7 @@
             </section>
             <section class="blog center">
                 <div class="heading ">
-                    <a class="heading__title"
-                    @click="$router.push({ path: '/BlogDetails'})">Articles & News</a>
+                    <div class="heading__title">Articles & News</div>
                     <div class="heading__subtitle">It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.</div>
                 </div>
                 <div class="blog__items center">
@@ -133,8 +127,7 @@
                                 <div class="blog__text">Let’s Get Solution For Building Construction Work</div>
                                 <div class="blog__date">
                                         <h3 class="blog__date-title">26 December,2022 </h3>
-                                    <a href="#"
-                                        @click="$router.push({ path: '/BlogDetails'})">
+                                    <a href="#">
                                         <svg class="blog__button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
                                             <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -155,8 +148,7 @@
                                     Ideas.</div>
                                 <div class="blog__date">
                                         <h3 class="blog__date-title">22 December,2022  </h3>
-                                    <a href="#"
-                                        @click="$router.push({ path: '/BlogDetails'})">
+                                    <a href="#">
                                         <svg class="blog__button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
                                             <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -177,8 +169,7 @@
                                     Solution</div>
                                 <div class="blog__date">
                                         <h3 class="blog__date-title">25 December,2022 </h3>
-                                    <a href="#"
-                                        @click="$router.push({ path: '/BlogDetails'})">
+                                    <a href="#">
                                         <svg class="blog__button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
                                             <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

@@ -21,7 +21,8 @@
                             </p>
                             <div class="blog__date">
                                     <h3 class="blog__date-title">26 December, 2022  </h3>
-                                <a href="#">
+                                <a href="#"
+                                    @click="$router.push({ path: '/BlogDetails'})">
                                     <svg class="blog__button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
                                         <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -33,8 +34,8 @@
                 </div>
             </section>
             <section class="blog center">
-                <div class="article-heading">Articles & News</div>
-    
+                <a class="article-heading"
+                @click="$router.push({ path: '/BlogDetails'})">Articles & News</a>
                 <div id="blog" class="blog__items center">
                         <div v-for="card in allBlogCards" :key="card.id" class="blog__item">
                             <div class="blog__content">
@@ -46,7 +47,8 @@
                                     <div class="blog__text">{{ card.text }}</div>
                                     <div class="blog__date">
                                             <h3 class="blog__date-title">{{ card.date }} </h3>
-                                        <a href="#">
+                                        <a href="#"
+                                        @click="$router.push({ path: '/BlogDetails'})">
                                             <svg class="blog__button" width="52" height="52" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="35" cy="35.0001" r="35" fill="#F4F0EC"/>
                                                 <path d="M32 44.0001L40 35.0001L32 26.0001" stroke="#292F36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

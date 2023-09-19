@@ -1,25 +1,45 @@
 <template>
   <header class="header center">
         <a href="#">
-            <div class="logo">
+            <div class="logo"
+            @click="$router.push({ path: '/'})">
             <img class="logo__img" src="../assets/images/Logo.png" alt="logo">
             <h2 class="logo__text">Interno</h2>
         </div>
         </a>
         <div class="menubar">
             <div class="menu">
-                <a class="menu__text">Home</a>
-                <a class="menu__text">Project</a>
-                <a class="menu__text">Blog</a>
+                <router-link 
+                    to="/IndexPage">
+                        <a class="menu__text"
+                            >Home
+                        </a>
+                </router-link>
+                <router-link 
+                    to="/ProjectPage">
+                        <a class="menu__text"
+                            >Project
+                        </a>
+                </router-link>
+                <router-link 
+                    to="/BlogPage">
+                        <a class="menu__text"
+                            >Blog
+                        </a>
+                </router-link>
             </div>
         </div>
     </header>
 </template>
 
 <script>
+
 export default {
   name: 'HeaderBlock',
   props: {
+  },
+  handleClick() {
+      alert('Clicked')
   }
 }
 </script>

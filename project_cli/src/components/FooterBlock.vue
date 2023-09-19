@@ -3,7 +3,8 @@
         <footer class="footer center">
         <div class="footer__logo">
             <a href="#">
-                <div class="logo-container">
+                <div class="logo-container"
+                @click="$router.push({ path: '/'})">
                 <img class="footer__logo-img" src="../assets/images/Logo.png" alt="logo">
                 <h2 class="footer__logo-text">Interno</h2>
             </div>
@@ -20,9 +21,24 @@
         </div>
         <div class="footer__pages">
             <h2 class="footer__title">Pages</h2>
-            <a class="footer__text" href="#">Home</a>
-            <a class="footer__text" href="#">Project</a>
-            <a class="footer__text" href="#">Blog</a>
+            <router-link 
+                to="/IndexPage">
+                    <a class="footer__text"
+                        >Home
+                    </a>
+            </router-link>
+            <router-link 
+                to="/ProjectPage">
+                    <a class="footer__text"
+                        >Project
+                    </a>
+            </router-link>
+            <router-link 
+                to="/BlogPage">
+                    <a class="footer__text"
+                        >Blog
+                    </a>
+            </router-link>
         </div>
         <div class="footer__none"></div>
         <div class="footer__contacts">
