@@ -9,9 +9,9 @@
                     Be Unique</h2>
                 <h2 class="intro__subtitle">There are many variations of the passages of
                     lorem Ipsum fromavailable, majority.</h2>
-                <div class="intro__buttom"
+                <div class="intro__button"
                     @click="$router.push({ path: '/ProjectPage'})">
-                    <a class="intro__buttom-text" href="#">Get Started</a>
+                    <a class="intro__button-text" href="#">Get Started</a>
                     <img src="../../../public/images/Vector.png" alt="">
                 </div>
                 </div>
@@ -253,7 +253,7 @@ export default {
         letter-spacing: 0.22px;
     }
     
-    &__buttom {
+    &__button {
         width: 220px;
         height: 75px;
         display: flex;
@@ -266,7 +266,7 @@ export default {
         box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
     }
 
-    &__buttom-text {
+    &__button-text {
         color: #FFF;
         text-align: center;
         font-family: Jost;
