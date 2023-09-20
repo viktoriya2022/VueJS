@@ -23,19 +23,6 @@
 export default {
     name: 'CardsBlock',
     props: ['card'],
-    data() {
-        return {
-            
-        };
-    },
-
-    mounted() {
-        
-    },
-
-    methods: {
-        
-    },
 };
 </script>
 
@@ -69,7 +56,7 @@ export default {
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 125%; /* 31.25px */
+    line-height: 125%; 
     letter-spacing: 0.5px;
 }
 
@@ -79,7 +66,7 @@ export default {
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 33px */
+    line-height: 150%; 
     letter-spacing: 0.22px;
 }
 </style>

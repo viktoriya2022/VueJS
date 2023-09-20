@@ -22,6 +22,11 @@ const routes = [
         component: BlogPage
     },
     {
+        name: 'BlogPage',
+        path: '/BlogPage/:page',
+        component: BlogPage
+    },
+    {
         name: 'BlogDetails',
         path: '/BlogDetails',
         component: BlogDetails
@@ -29,6 +34,11 @@ const routes = [
     {
         name: 'ProjectPage',
         path: '/ProjectPage',
+        component: ProjectPage,
+    },
+    {
+        name: 'ProjectCatalog',
+        path: '/ProjectPage/:page',
         component: ProjectPage,
     },
     {

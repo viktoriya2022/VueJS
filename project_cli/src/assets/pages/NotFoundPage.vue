@@ -8,29 +8,22 @@
                     <p class="info__text">
                         We are sorry, but the page you requested was not found
                     </p>
-                    <div class="info__button"
-                    @click="$router.push({ path: '/'})">
-                    <a class="info__button-text" href="#">Back To Home</a>
-                    <img src="../../../public/images/Vector.png" alt="">
-                </div>
+                    <a class="info__button"
+                        @click="$router.push({ path: '/'})">
+                        <a class="info__button-text" href="#">Back To Home</a>
+                        <img src="../../../public/images/Vector.png" alt="">
+                    </a>
                 </div>
                 <img class="img" src="../../../public/images/Not_found_foto.png" alt="not_found-photo">
             </div>
         </main>
     </div>
 </template>
-
 <script>
 import HeaderBlock from '@/components/HeaderBlock.vue';
 
 export default {
     name: 'IndexPage',
-    data() {
-        return {};
-    },
-    mounted() {
-    },
-    methods: {},
     components: { HeaderBlock }
 };
 </script>

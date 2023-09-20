@@ -36,11 +36,6 @@
 
 export default {
   name: 'HeaderBlock',
-  props: {
-  },
-  handleClick() {
-      alert('Clicked')
-  }
 }
 </script>
 

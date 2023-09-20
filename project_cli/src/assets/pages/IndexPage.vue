@@ -9,11 +9,11 @@
                     Be Unique</h2>
                 <h2 class="intro__subtitle">There are many variations of the passages of
                     lorem Ipsum fromavailable, majority.</h2>
-                <div class="intro__button"
+                <a class="intro__button"
                     @click="$router.push({ path: '/ProjectPage'})">
                     <a class="intro__button-text" href="#">Get Started</a>
                     <img src="../../../public/images/Vector.png" alt="">
-                </div>
+                </a>
                 </div>
             </section>
             <section class="project center">

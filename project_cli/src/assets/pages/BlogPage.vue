@@ -37,7 +37,7 @@
                 <a class="article-heading"
                 @click="$router.push({ path: '/BlogDetails'})">Articles & News</a>
                 <div id="blog" class="blog__items center">
-                        <div v-for="card in allBlogCards" :key="card.id" class="blog__item">
+                        <div v-for="card in currentProductList" :key="card.id" class="blog__item">
                             <div class="blog__content">
                                 <div class="tag">
                                     <h3 class="tag__text">{{ card.tag }}</h3>
@@ -59,7 +59,21 @@
                             </div>
                         </div>
                 </div>
-                <PaginationBlock/>
+                <div id="pages" class="pagination" >
+                <router-link  
+                    v-for="page in 3" 
+                    :to="`/BlogPage/${page}`" 
+                    :key="page" 
+                    class="container">
+                        <a href="#"
+                            class="pagination__pages">
+                            <svg  width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274"/>
+                            </svg>
+                            <h2 class="pagination__number">{{'0' + page}}</h2>
+                        </a>
+                </router-link>
+            </div>
             </section>
         </main>
         <FooterBlock/>
@@ -69,27 +83,47 @@
 <script>
 import FooterBlock from '@/components/FooterBlock.vue';
 import HeaderBlock from '@/components/HeaderBlock.vue';
-import PaginationBlock from '@/components/PaginationBlock.vue';
+// import PaginationBlock from '@/components/PaginationBlock.vue';
 import TitleBlock from '@/components/TitleBlock.vue';
 import { mapGetters } from 'vuex';
 
 export default {
     name: 'BlogPage',
-    computed: {
-        ...mapGetters(['allBlogCards']),
-    },
-
     data: function() {
         return {
             title: 'Articles & News',
             subtitle: 'Home / Blog',
             img: "../images/Photo_11.png",
+            currentPage: 1,
+            itemsPerPage: 3,
         };
     },
+    computed: {
+        ...mapGetters(['allBlogCards']),
+        currentProductList() {
+                const {currentPage, itemsPerPage} = this;
+                const startIndex = (currentPage - 1) * itemsPerPage;
+                const endIndex = startIndex + itemsPerPage;
+                return this.allBlogCards.slice(startIndex, endIndex)
+        },
+    },
+    watch: {
+        $route(to, from) {
+            const page = this.$route.params.page;
+            if (page) this.currentPage = +page;
+            console.log(to, from);
+        }
+    },
     mounted() {
+        console.log(this.$route);
     },
     methods: {},
-    components: { HeaderBlock, FooterBlock, TitleBlock, PaginationBlock }
+    components: { 
+        HeaderBlock, 
+        FooterBlock, 
+        TitleBlock, 
+        // PaginationBlock 
+    }
 };
 </script>
 
@@ -184,7 +218,7 @@ export default {
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 150%; /* 24px */
+        line-height: 150%; 
         letter-spacing: 0.16px;
         text-transform: capitalize;
     }
@@ -218,6 +252,38 @@ export default {
         font-weight: 400;
         line-height: 150%; /* 24px */
         letter-spacing: 0.16px;
+        text-transform: capitalize;
+    }
+}
+.container {
+    position: relative;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 78px;
+    margin-top: 51px;
+
+    &__pages:hover circle{
+        stroke: none;
+        fill: #F4F0EC;
+    }
+     
+    &__pages {
+        position: absolute;
+    }
+    
+    &__number {
+        position: absolute;
+        top: 14px;
+        right: 18px;
+        color: #292F36;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
         text-transform: capitalize;
     }
 }

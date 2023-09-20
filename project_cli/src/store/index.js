@@ -36,7 +36,25 @@ export default {
               img: '../images/Photo_10.png', 
               text: 'Best For Any Office & Business Interior Solution',
               date: '25 December, 2022'
-           }
+           },
+           { id: 7, 
+            tag: 'Living Design', 
+            img: '../images/Photo_6.png', 
+            text: 'Low Cost Latest Invented Interior Designing Ideas.',
+            date: '22 December, 2022'
+         },
+          { id: 8, 
+            tag: 'Interior Design', 
+            img: '../images/Photo_7.png', 
+            text: 'Best For Any Office & Business Interior Solution',
+            date: '25 December, 2022'
+         },
+         { id: 9, 
+            tag: 'Interior Design', 
+            img: '../images/Photo_9.png', 
+            text: 'Low Cost Latest Invented Interior Designing Ideas.',
+            date: '22 December, 2022'
+         },
         ],
         cards: [
             {
@@ -62,10 +80,10 @@ export default {
             },
             {
                 id: 4,
-                cardTitle: 'Modern Bedroom, tag: living_area',
+                cardTitle: 'Modern Bedroom, tag: kitchen',
                 cardSubtitle: 'Decor / Artchitecture',
                 cardImg: '../images/Photo_23.png',
-                tag: 'living_area'
+                tag: 'kitchen'
             },
             {
                 id: 5,
@@ -83,10 +101,10 @@ export default {
             },
             {
                 id: 7,
-                cardTitle: 'Modern Bedroom, tag: living_area',
+                cardTitle: 'Modern Bedroom, tag: kitchen',
                 cardSubtitle: 'Decor / Artchitecture',
                 cardImg: '../images/Photo_22.png',
-                tag: 'living_area'
+                tag: 'kitchen'
             },
             {
                 id: 8,
@@ -94,6 +112,69 @@ export default {
                 cardSubtitle: 'Decor / Artchitecture',
                 cardImg: '../images/Photo_24.png',
                 tag: 'bedroom'
+            },
+            {
+                id: 9,
+                cardTitle: 'Minimal Bedroom',
+                cardSubtitle: 'Decor / Artchitecture',
+                cardImg: '../images/Photo_17.png',
+                tag: 'bedroom'
+            },
+            {
+                id: 10,
+                cardTitle: 'Minimal Bedroom, tag: bathroom',
+                cardSubtitle: 'Decor / Artchitecture',
+                cardImg: '../images/Photo_18.png',
+                tag: 'bathroom'
+            },
+            {
+                id: 11,
+                cardTitle: 'Classic Bedroom, tag: kitchen',
+                cardSubtitle: 'Decor / Artchitecture',
+                cardImg: '../images/Photo_18.png',
+                tag: 'kitchen'
+            },
+            {
+                id: 12,
+                cardTitle: 'Modern Bedroom, tag: living_area',
+                cardSubtitle: 'Decor / Artchitecture',
+                cardImg: '../images/Photo_23.png',
+                tag: 'living_area'
+            },
+            {
+                id: 13,
+                cardTitle: 'Minimal Bedroom table, tag: living_area',
+                cardSubtitle: 'Decor / Artchitecture',
+                cardImg: '../images/Photo_24.png',
+                tag: 'living_area'
+            },
+            {
+                id: 14,
+                cardTitle: 'System Table, tag: bedroom',
+                cardSubtitle: 'Decor / Artchitecture',
+                cardImg: '../images/Photo_20.png',
+                tag: 'bedroom'
+            },
+            {
+                id: 15,
+                cardTitle: 'Modern Bedroom, tag: living_area',
+                cardSubtitle: 'Decor / Artchitecture',
+                cardImg: '../images/Photo_22.png',
+                tag: 'living_area'
+            },
+            {
+                id: 16,
+                cardTitle: 'Minimal Bedroom table, tag: bathroom',
+                cardSubtitle: 'Decor / Artchitecture',
+                cardImg: '../images/Photo_21.png',
+                tag: 'bathroom'
+            },
+            {
+                id: 17,
+                cardTitle: 'Classic Bedroom, tag: bathroom',
+                cardSubtitle: 'Decor / Artchitecture',
+                cardImg: '../images/Photo_18.png',
+                tag: 'bathroom'
             },
         ],
         tags: [

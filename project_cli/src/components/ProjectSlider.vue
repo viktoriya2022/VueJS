@@ -36,8 +36,6 @@ export default {
             currentSlideIndex: 0
         };
     },
-    mounted() {
-    },
     methods: {
         prevSlide() {
             if(this.currentSlideIndex > 0) {

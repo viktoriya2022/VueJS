@@ -14,9 +14,9 @@ const store = new Vuex.Store(myStore);
 const router = new VueRouter({
   mode: 'history',
   routes,
-  scrollBehavior(){
-    return { x: 0, y: 0 }
-  }
+  // scrollBehavior(){
+  //   return { x: 0, y: 0 }
+  // }
 })
 
 

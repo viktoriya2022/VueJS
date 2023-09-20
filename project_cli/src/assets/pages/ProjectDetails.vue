@@ -36,14 +36,6 @@ export default {
     computed: {
         ...mapGetters(['allSliderItems']),
     },
-
-    data() {
-        return {
-       }
-    },
-    methods: {
-    },
-
     components: { 
         HeaderBlock, 
         FooterBlock, 
